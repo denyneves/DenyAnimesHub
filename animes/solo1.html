@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes: Solo Leveling (Temporada 1) - DenyAnimeHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/icone.png" type="image/png">
+</head>
+<body data-theme="light">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <a href="../index.html">
+                    <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                     <li><a href="../index.html">Início</a></li>
+                    <li><a href="../assistir.html">Assistir</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li>
+                        <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon icon-moon"></i>
+                            <i class="fas fa-sun icon-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="anime-detail-section container">
+            <div class="anime-detail__grid">
+                <aside class="anime-detail__sidebar">
+                    <div class="anime-detail__poster">
+                        <img src="../images/solo1.jpg" alt="Poster Solo Leveling">
+                    </div>
+                    <div class="anime-detail__info-block">
+                        <h4 class="text-accent mb-2">Informações</h4>
+                        <p><strong><i class="fas fa-star"></i> Classificação:</strong> 8.4</p>
+                        <p><strong><i class="fas fa-calendar-alt"></i> Lançamento:</strong> 2024</p>
+                        <p><strong><i class="fas fa-globe"></i> Idioma:</strong> Legendado / Dublado</p>
+                        <p><strong><i class="fas fa-film"></i> Estúdio:</strong> A-1 Pictures</p>
+                        <p><strong><i class="fas fa-tags"></i> Gêneros:</strong> Ação, Aventura, Fantasia</p>
+                        <p><strong><i class="fas fa-tv"></i> Status:</strong> Concluído</p>
+                    </div>
+                     <a href="#episode-list-title" class="btn btn--primary" style="width: 100%; margin-top: var(--spacing-md);"><i class="fas fa-list-ol"></i> Ir para Episódios</a>
+                </aside>
+
+                <article class="anime-detail__content">
+                    <h1>Solo Leveling</h1>
+                    <div class="subtitle">俺だけレベルアップな件</div>
+
+                    <h4 class="text-accent mb-1">Sinopse (Temporada 1)</h4>
+                    <p>Dez anos atrás, após o "Portal" que conecta o mundo real com um mundo de monstros se abrir, algumas pessoas comuns receberam o poder de caçar monstros dentro do Portal. Eles são conhecidos como "Caçadores". Porém, nem todos os Caçadores são fortes. Sung Jinwoo é um Caçador de rank E, conhecido como "O Mais Fraco do Mundo". Arriscando sua vida em dungeons de baixo nível apenas para sobreviver, ele encontra uma misteriosa dungeon dupla.</p>
+                    <p>À beira da morte, Jinwoo recebe um poder extraordinário: um "Sistema" que só ele pode ver, permitindo que ele suba de nível ao completar missões. Agora, ele tem a chance de deixar para trás sua antiga fraqueza e trilhar o caminho para se tornar o caçador mais forte que existe.</p>
+
+                    <h4 class="text-accent mt-3 mb-1">Trailer (Temporada 1)</h4>
+                    <div class="anime-detail__trailer mb-3" style="display: flex; justify-content: center; align-items: center;">
+                         <!-- Trailer Data Atualizado para S1 -->
+                        <article class="anime-card" data-trailer="https://www.youtube.com/embed/ujv2fLp3lU8"
+                            style="width: 100%; max-width: 900px; height: auto; border-radius: 10px;
+                                   overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                                   padding: 50px; background: #1a1a1a;">
+                            <iframe style="width: 100%; height: 400px; border-radius: 10px;"
+                                    src="https://www.youtube.com/embed/ujv2fLp3lU8"
+                                    title="Trailer Solo Leveling (Temporada 1)"
+                                    frameborder="3" allowfullscreen>
+                            </iframe>
+                        </article>
+                    </div>
+
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let animeCard = document.querySelector(".anime-detail__trailer .anime-card");
+                        if (animeCard) {
+                            let trailerUrl = animeCard.getAttribute("data-trailer");
+                            let iframe = animeCard.querySelector("iframe");
+                            if (trailerUrl && iframe) {
+                                iframe.src = trailerUrl;
+                            }
+                        } else {
+                            animeCard = document.querySelector(".anime-card");
+                             if (animeCard) {
+                                console.warn("Seletor de trailer '.anime-detail__trailer .anime-card' não encontrado, usando '.anime-card'.");
+                                let trailerUrl = animeCard.getAttribute("data-trailer");
+                                let iframe = animeCard.querySelector("iframe");
+                                if (trailerUrl && iframe) {
+                                    iframe.src = trailerUrl;
+                                }
+                             }
+                        }
+                    });
+                    </script>
+
+                     <h4 class="text-accent mt-3 mb-1" id="episode-list-title">Episódios (Temporada 1)</h4>
+                    <ul class="episode-list">
+                        <!-- Atualize os href para apontar para sua página de assistir -->
+                        <!-- Exemplo: href="../assistir.html#ep=solo-1" ou como preferir -->
+                        <li><a href="../assistir.html#ep=solo-1"><span>Episódio 01 - Estou Acostumado</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-2"><span>Episódio 02 - Se Eu Tivesse Outra Chance</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-3"><span>Episódio 03 - É Como um Jogo</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-4"><span>Episódio 04 - Tenho que Ficar Mais Forte</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-5"><span>Episódio 05 - Um Bom Negócio</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-6"><span>Episódio 06 - O Verdadeiro Despertar Começa Agora</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-7"><span>Episódio 07 - Vamos Ver Até Onde Consigo Ir</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-8"><span>Episódio 08 - Isso é Frustrante</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-9"><span>Episódio 09 - Você Escondeu Suas Habilidades</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-10"><span>Episódio 10 - O Que É Isso, Um Piquenique?</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-11"><span>Episódio 11 - Um Cavaleiro Que Defende um Trono Vazio</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="../assistir.html#ep=solo-12"><span>Episódio 12 - Erga-se</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1Xqwvj4al-mlkcMLCGJgWoeujZOkU8QoK?usp=drive_link"><span>Temporada (Completa)</span> </i></a></li>
+                     </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column footer-column--about">
+                <div class="footer-logo">
+                    <a href="../index.html">
+                         <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                         <span>DenyAnimeHub</span>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+            </div>
+            <div class="footer-column footer-column--links">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-link-list">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../assistir.html">Assistir</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column--contact">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angola, Luanda, Talatona</span>
+                    </li>
+                    <li>
+                        <a href="mailto:denyneves14@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>denyneves14@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+244935995336">
+                            <i class="fas fa-phone"></i>
+                            <span>+244 935 995 336</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+244 935 995 336 (WhatsApp)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column footer-column--social">
+                <h4 class="footer-title">Siga-nos</h4>
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+         <div class="footer-bottom">
+             <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p>
+         </div>
+    </div>
+</footer>
+
+    <script src="../script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle');
+            const bodyElement = document.body;
+             const applyTheme = (theme) => {
+                if (bodyElement) {
+                    bodyElement.dataset.theme = theme;
+                    localStorage.setItem('theme', theme);
+                }
+            };
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            if (themeToggleButton && bodyElement) {
+                themeToggleButton.addEventListener('click', () => {
+                    const newTheme = bodyElement.dataset.theme === 'light' ? 'dark' : 'light';
+                    applyTheme(newTheme);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DenyAnimeHub - Seu Portal Futurista de Animes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o CSS principal e refeito -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/1.ico" type="image/ico">
+</head>
+<body data-theme="dark" class="page-index"> <!-- Default to dark -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <a href="index.html">
+                    <img src="images/1.ico" alt="Logo DenyAnimeHub">
+              <span>DenyAnimeHub</span> 
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="assistir.html">Assistir</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li>
+                        <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon icon-moon"></i>
+                            <i class="fas fa-sun icon-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section id="hero-carousel" class="hero-carousel-section animated-section fade-in">
+        <div class="container">
+            <header class="hero-carousel-header">
+                <h2><i class="fas fa-meteor"></i> Em Órbita Agora</h2>
+                <p>Os lançamentos e destaques mais explosivos!</p>
+            </header>
+            <div class="hero-carousel-container">
+                 <a href="animes/solo.html" class="hero-anime-card" title="Solo Leveling T2">
+                    <div class="hero-card__image"> <img src="images/solo.jpg" alt="Capa Solo Leveling T2" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Solo Leveling T2</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Em Breve</span> </div>
+                 </a>
+                 <a href="animes/demon4.html" class="hero-anime-card" title="Demon Slayer: Hashira Training">
+                    <div class="hero-card__image"> <img src="images/demon.jpg" alt="Capa Demon Slayer HT" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Demon Slayer HT</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> 8.8</span> </div>
+                 </a>
+                 <a href="animes/kaiju8.html" class="hero-anime-card" title="Kaiju No. 8">
+                    <div class="hero-card__image"> <img src="images/kaiju_8.jpg" alt="Capa Kaiju No. 8" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Kaiju No. 8</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> 8.9</span> </div>
+                 </a>
+                 <a href="animes/frieren.html" class="hero-anime-card" title="Frieren: Beyond Journey's End">
+                   <div class="hero-card__image"> <img src="images/anime2024_frieren.jpg" alt="Capa Frieren" loading="lazy"> </div>
+                   <div class="hero-card__content"> <h4 class="hero-card__title">Frieren</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> 9.1</span> </div>
+                 </a>
+                 <a href="animes/dandan.html" class="hero-anime-card" title="Dandadan">
+                    <div class="hero-card__image"> <img src="images/anime2025_dandadan.jpg" alt="Capa Dandadan" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Dandadan</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Hype!</span> </div>
+                 </a>
+                 <a href="animes/jujutsu3.html" class="hero-anime-card" title="Jujutsu Kaisen T3">
+                    <div class="hero-card__image"> <img src="images/jujutsu3.jpg" alt="Capa Jujutsu Kaisen T3" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Jujutsu Kaisen T3</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Aguardado</span> </div>
+                 </a>
+                 <a href="animes/onepunch3.html" class="hero-anime-card" title="One Punch Man T3">
+                    <div class="hero-card__image"> <img src="images/onepunch.jpg" alt="Capa One Punch Man T3" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">One Punch Man T3</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Em Prod.</span> </div>
+                 </a>
+                 <a href="animes/chainswan2.html" class="hero-anime-card" title="Chainsaw Man Movie">
+                    <div class="hero-card__image"> <img src="images/chainsaw.jpg" alt="Capa Chainsaw Man Movie" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Chainsaw Filme</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Breve</span> </div>
+                 </a>
+                 <a href="animes/bleach.html" class="hero-anime-card" title="Bleach: TYBW Cour 3">
+                    <div class="hero-card__image"> <img src="images/noticia_bleach_final.jpg" alt="Capa Bleach TYBW C3" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Bleach TYBW C3</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Out 24</span> </div>
+                 </a>
+                 <a href="animes/vinland2.html" class="hero-anime-card" title="Vinland Saga T2">
+                   <div class="hero-card__image"> <img src="images/anime2025_vinland_s2.jpg" alt="Capa Vinland Saga T2" loading="lazy"> </div>
+                   <div class="hero-card__content"> <h4 class="hero-card__title">Vinland Saga T2</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> 9.0</span> </div>
+                 </a>
+                 <a href="animes/arcane2.html" class="hero-anime-card" title="Arcane T2">
+                    <div class="hero-card__image"> <img src="images/arcane.jpg" alt="Capa Arcane T2" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Arcane T2</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Nov 24</span> </div>
+                 </a>
+                  <a href="animes/sakamoto.html" class="hero-anime-card" title="Sakamoto Days">
+                    <div class="hero-card__image"> <img src="images/sakamoto_days.jpg" alt="Capa Sakamoto Days" loading="lazy"> </div>
+                    <div class="hero-card__content"> <h4 class="hero-card__title">Sakamoto Days</h4> <span class="hero-card__rating"><i class="fas fa-star"></i> Jan 25</span> </div>
+                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Layout (Content + Sidebar) -->
+    <div class="main-layout container">
+
+        <!-- Main Content Area -->
+        <main class="main-content-area">
+
+             <!-- Filters Section -->
+            <section class="filters-section animated-section fade-in-up">
+                <header class="filters-header">
+                    <h2><i class="fas fa-atom"></i> Filtrar Dimensões</h2>
+                    <p>Refine sua busca no multiverso DenyAnimeHub!</p>
+                </header>
+                <form class="filter-controls" id="anime-filter-form" action="#" method="get">
+                    <div class="filter-group">
+                        <label for="genre-filter"><i class="fas fa-theater-masks"></i> Gênero</label>
+                        <div class="select-wrapper">
+                            <select id="genre-filter" name="genre">
+                                <option value="">Todos Gêneros</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Comédia">Comédia</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Sci-Fi">Sci-Fi</option>
+                                <option value="Shonen">Shonen</option>
+                                <option value="Slice of Life">Slice of Life</option>
+                                <option value="Esporte">Esporte</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Suspense">Suspense</option>
+                                <option value="Isekai">Isekai</option>
+                                <option value="Terror">Terror</option>
+                                <!-- Adicione mais gêneros -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="year-filter"><i class="fas fa-calendar-alt"></i> Ano</label>
+                        <div class="select-wrapper">
+                            <select id="year-filter" name="year">
+                                <option value="">Todos Anos</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2010s">2010-2019</option>
+                                <option value="2000s">2000s</option>
+                                <option value="older">Anteriores</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-filter"><i class="fas fa-sort-amount-down-alt"></i> Ordenar</label>
+                        <div class="select-wrapper">
+                            <select id="sort-filter" name="sort">
+                                <option value="popularity">Popularidade</option>
+                                <option value="rating">Classificação</option>
+                                <option value="newest">Mais Recentes</option>
+                                <option value="oldest">Mais Antigos</option>
+                                <option value="alphabetical">A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-group search-group">
+                        <label for="search-filter"><i class="fas fa-search"></i> Busca Direta</label>
+                        <input type="search" id="search-filter" name="q" placeholder="Digite o nome do anime, ex: Naruto...">
+                    </div>
+                    <div class="filter-group az-filter">
+                        <label for="az-filter-list"><i class="fas fa-font"></i> Filtro Alfabético</label>
+                        <nav class="az-filter-container" aria-label="Filtro alfabético">
+                            <ul class="az-filter-list" id="az-filter-list">
+                                <li><a href="#" class="az-link active" data-letter="all" title="Mostrar todos">#</a></li>
+                                <li><a href="#" class="az-link" data-letter="A">A</a></li> <li><a href="#" class="az-link" data-letter="B">B</a></li> <li><a href="#" class="az-link" data-letter="C">C</a></li> <li><a href="#" class="az-link" data-letter="D">D</a></li> <li><a href="#" class="az-link" data-letter="E">E</a></li> <li><a href="#" class="az-link" data-letter="F">F</a></li> <li><a href="#" class="az-link" data-letter="G">G</a></li> <li><a href="#" class="az-link" data-letter="H">H</a></li> <li><a href="#" class="az-link" data-letter="I">I</a></li> <li><a href="#" class="az-link" data-letter="J">J</a></li> <li><a href="#" class="az-link" data-letter="K">K</a></li> <li><a href="#" class="az-link" data-letter="L">L</a></li> <li><a href="#" class="az-link" data-letter="M">M</a></li> <li><a href="#" class="az-link" data-letter="N">N</a></li> <li><a href="#" class="az-link" data-letter="O">O</a></li> <li><a href="#" class="az-link" data-letter="P">P</a></li> <li><a href="#" class="az-link" data-letter="Q">Q</a></li> <li><a href="#" class="az-link" data-letter="R">R</a></li> <li><a href="#" class="az-link" data-letter="S">S</a></li> <li><a href="#" class="az-link" data-letter="T">T</a></li> <li><a href="#" class="az-link" data-letter="U">U</a></li> <li><a href="#" class="az-link" data-letter="V">V</a></li> <li><a href="#" class="az-link" data-letter="W">W</a></li> <li><a href="#" class="az-link" data-letter="X">X</a></li> <li><a href="#" class="az-link" data-letter="Y">Y</a></li> <li><a href="#" class="az-link" data-letter="Z">Z</a></li>
+                            </ul>
+                        </nav>
+                        <input type="hidden" name="letter" id="selected-letter" value="all">
+                    </div>
+                    <div class="filter-actions">
+                         <button type="reset" class="btn btn--secondary" id="reset-filters"> <i class="fas fa-undo-alt"></i> Limpar Filtros </button>
+                         <small>* A filtragem é aplicada automaticamente.</small>
+                    </div>
+                </form>
+            </section> <!-- Fim Filters Section -->
+
+             <!-- Anime Listing Section -->
+            <section id="animes" class="anime-list animated-section fade-in-up">
+                <h2 class="section-title-main"><i class="fas fa-layer-group"></i> Catálogo Completo</h2>
+
+                 <!-- ======================= -->
+                 <!-- CAROUSEL A - E         -->
+                 <!-- ======================= -->
+                <section class="anime-carousel-section">
+                    <h3 class="carousel-title">A - E</h3>
+                    <div class="anime-carousel-container">
+                        <!-- Animes A -->
+                        <article class="anime-card" data-id="3" data-title="Akame ga Kill!" data-genres="Ação,Fantasia Sombria,Aventura,Drama" data-image="images/anime_akame_ga_kill.jpg" data-rating="7.5" data-year="2014" data-language="Leg" data-description="Tatsumi junta-se à Night Raid para lutar contra a corrupção do Império." data-trailer="https://www.youtube.com/embed/NLnYhnoDjVs" data-download-page="animes/akame.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_akame_ga_kill.jpg" alt="Capa Akame ga Kill!" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Akame ga Kill!</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.5</span> <span><i class="fas fa-calendar-alt"></i> 2014</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/akame.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="107" data-title="Arcane" data-genres="Ação,Aventura,Sci-Fi,Fantasia,Drama" data-image="images/arcane.jpg" data-rating="9.0" data-year="2021" data-language="Leg/Dub" data-description="Em Piltover e Zaun, cidades conflitantes, a história das irmãs Vi e Jinx se desenrola." data-trailer="https://www.youtube.com/embed/Ft_QrPGXWqc" data-download-page="animes/arcane2.html">
+                           <div class="anime-card__image-container"> <img src="images/arcane.jpg" alt="Capa Arcane" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Arcane</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.0</span> <span><i class="fas fa-calendar-alt"></i> 2021</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/arcane2.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="441" data-title="Attack on Titan" data-genres="Ação,Drama,Fantasia Sombria,Militar,Mistério" data-image="images/ataque.jpg" data-rating="9.0" data-year="2013" data-language="Leg/Dub" data-description="A humanidade luta contra Titãs devoradores de homens dentro de muralhas." data-trailer="https://www.youtube.com/embed/M_OauHnAFc8" data-download-page="animes/ataque.html">
+                           <div class="anime-card__image-container"> <img src="images/ataque.jpg" alt="Capa Attack on Titan" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Attack on Titan</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.0</span> <span><i class="fas fa-calendar-alt"></i> 2013</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/ataque.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes B -->
+                         <article class="anime-card" data-id="404" data-title="Blades of the Guardians (Biao Ren)" data-genres="Ação,Aventura,Histórico,Drama,Donghua" data-image="images/anime_biao_ren.jpg" data-rating="7.8" data-year="2023" data-language="Leg" data-description="(Donghua) Na China antiga, um mercenário escolta um grupo em jornada perigosa." data-trailer="https://www.youtube.com/embed/GBeYFVJF6o0" data-download-page="animes/blade.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_biao_ren.jpg" alt="Capa Blades of the Guardians" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Blades of the Guardians</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.8</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/blade.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="442" data-title="Bleach" data-genres="Ação,Aventura,Sobrenatural,Shonen" data-image="images/anime2022_bleach_tybw.jpg" data-rating="7.9" data-year="2004" data-language="Leg/Dub" data-description="Ichigo Kurosaki ganha poderes de Shinigami e protege humanos de espíritos malignos." data-trailer="https://www.youtube.com/embed/1syg9WFfcA" data-download-page="animes/bleach.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2022_bleach_tybw.jpg" alt="Capa Bleach" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Bleach</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2004</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/bleach.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="411" data-title="Blood Lad" data-genres="Ação,Comédia,Demônios,Vampiro,Seinen" data-image="images/anime2024_bloodlad.jpg" data-rating="7.2" data-year="2013" data-language="Leg" data-description="Staz, um vampiro otaku, tenta ressuscitar uma garota humana que virou fantasma." data-trailer="https://www.youtube.com/embed/OaZyP2tcnZg" data-download-page="animes/bloodlad.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_bloodlad.jpg" alt="Capa Blood Lad" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Blood Lad</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.2</span> <span><i class="fas fa-calendar-alt"></i> 2013</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/bloodlad.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="105" data-title="Blue Lock" data-genres="Esporte,Drama,Shonen" data-image="images/bluelock.jpg" data-rating="8.4" data-year="2022" data-language="Leg/Dub" data-description="Programa busca criar o maior atacante egoísta do Japão para vencer a Copa." data-trailer="https://www.youtube.com/embed/G2kQ_-h9T5k" data-download-page="animes/bluelock.html">
+                           <div class="anime-card__image-container"> <img src="images/bluelock.jpg" alt="Capa Blue Lock" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Blue Lock</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2022</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/bluelock.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes C -->
+                        <article class="anime-card" data-id="110" data-title="Castlevania: Nocturne" data-genres="Ação,Fantasia Sombria,Horror,Vampiro" data-image="images/castlevania_nocturne.jpg" data-rating="8.0" data-year="2023" data-language="Leg/Dub" data-description="Richter Belmont enfrenta ameaças sobrenaturais na França revolucionária." data-trailer="https://www.youtube.com/embed/z2UJsZ3hmmo" data-download-page="animes/classilvania.html">
+                           <div class="anime-card__image-container"> <img src="images/castlevania_nocturne.jpg" alt="Capa Castlevania: Nocturne" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Castlevania: Nocturne</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.0</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/classilvania.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="102" data-title="Chainsaw Man" data-genres="Ação,Fantasia Sombria,Comédia,Horror" data-image="images/chainsaw.jpg" data-rating="8.5" data-year="2022" data-language="Leg/Dub" data-description="Denji se torna o Chainsaw Man após um pacto com seu demônio de estimação." data-trailer="https://www.youtube.com/embed/q15CRdE5Bv0" data-download-page="animes/chainswan2.html">
+                           <div class="anime-card__image-container"> <img src="images/chainsaw.jpg" alt="Capa Chainsaw Man" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Chainsaw Man</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.5</span> <span><i class="fas fa-calendar-alt"></i> 2022</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/chainswan2.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="412" data-title="Cyberpunk: Edgerunners" data-genres="Ação,Sci-Fi,Drama,Psicológico" data-image="images/cyber.jpg" data-rating="8.6" data-year="2022" data-language="Leg/Dub" data-description="Garoto tenta sobreviver em Night City, cidade obcecada por tecnologia e modificação corporal." data-trailer="https://www.youtube.com/embed/JtqIas3bYhg" data-download-page="animes/cyberpunk.html">
+                           <div class="anime-card__image-container"> <img src="images/cyber.jpg" alt="Capa Cyberpunk: Edgerunners" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Cyberpunk: Edgerunners</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.6</span> <span><i class="fas fa-calendar-alt"></i> 2022</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/cyberpunk.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes D -->
+                        <article class="anime-card" data-id="666" data-title="Devil May Cry" data-genres="Ação,Fantasia,Demônios,Netflix" data-image="images/anime2025_devilmaycry.jpg" data-rating="9.0" data-year="2025" data-language="Leg/Dub" data-description="Caçador de demônios Dante retorna em uma nova e eletrizante adaptação da Netflix." data-trailer="https://www.youtube.com/embed/OlEqHXRrcpc" data-download-page="animes/devilmaycry.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2025_devilmaycry.jpg" alt="Capa Devil May Cry" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Devil May Cry</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.0</span> <span><i class="fas fa-calendar-alt"></i> 2025</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/devilmaycry.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="667" data-title="Death Note" data-genres="Mistério,Suspense,Psicológico,Shounen" data-image="images/deathnote.jpg" data-rating="9.5" data-year="2006" data-language="Leg/Dub" data-description="Um caderno capaz de matar quem tiver seu nome escrito nele cai nas mãos de Light Yagami." data-trailer="https://www.youtube.com/embed/NlJZ-YgAt-c" data-download-page="animes/deathnote.html">
+                           <div class="anime-card__image-container"> <img src="images/deathnote.jpg" alt="Capa Death Note" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Death Note</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.5</span> <span><i class="fas fa-calendar-alt"></i> 2006</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/deathnote.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes E -->
+                         <article class="anime-card" data-id="501" data-title="Erased" data-genres="Mistério,Psicológico,Sobrenatural,Seinen" data-image="images/erased.jpg" data-rating="8.5" data-year="2016" data-language="Leg/Dub" data-description="Jovem volta no tempo para salvar sua mãe e colegas de um assassino." data-trailer="https://www.youtube.com/embed/DwmAY3Qln6s" data-download-page="animes/erased.html">
+                           <div class="anime-card__image-container"> <img src="images/erased.jpg" alt="Capa Erased" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Erased</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.5</span> <span><i class="fas fa-calendar-alt"></i> 2016</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/erased.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                    </div><!-- Fim .anime-carousel-container A-E -->
+                </section>
+
+                 <!-- ======================= -->
+                 <!-- CAROUSEL F - J         -->
+                 <!-- ======================= -->
+                <section class="anime-carousel-section">
+                    <h3 class="carousel-title">F - J</h3>
+                    <div class="anime-carousel-container">
+                        <!-- Animes F -->
+                        <article class="anime-card" data-id="409" data-title="Fate/strange Fake -Whispers of Dawn-" data-genres="Ação,Sobrenatural,Fantasia" data-image="images/anime_fate_sf.jpg" data-rating="7.9" data-year="2023" data-language="Leg/Dub" data-description="Uma Guerra do Santo Graal falsa e caótica na cidade de Snowfield, EUA." data-trailer="https://www.youtube.com/embed/NOLyhNeLi0U" data-download-page="animes/fatestrange.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_fate_sf.jpg" alt="Capa Fate/strange Fake" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Fate/strange Fake</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/fatestrange.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="417" data-title="Frieren: Beyond Journey's End" data-genres="Aventura,Drama,Fantasia" data-image="images/anime2024_frieren.jpg" data-rating="9.1" data-year="2023" data-language="Leg/Dub" data-description="A elfa maga Frieren reflete sobre o tempo e a mortalidade após a aventura." data-trailer="https://www.youtube.com/embed/cUdJhS1ppbo" data-download-page="animes/Frieren.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_frieren.jpg" alt="Capa Frieren: Beyond Journey's End" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Frieren: Beyond Journey's End</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.1</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/Frieren.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="14" data-title="Fullmetal Alchemist: Brotherhood" data-genres="Ação,Aventura,Drama,Fantasia,Militar,Shonen" data-image="images/fullmetal.jpg" data-rating="9.1" data-year="2009" data-language="Leg/Dub" data-description="Irmãos alquimistas buscam a Pedra Filosofal para restaurar seus corpos." data-trailer="https://www.youtube.com/embed/--IcmZkvL0Q" data-download-page="animes/fullmetal.html">
+                           <div class="anime-card__image-container"> <img src="images/fullmetal.jpg" alt="Capa Fullmetal Alchemist: Brotherhood" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Fullmetal Alchemist: Brotherhood</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 9.1</span> <span><i class="fas fa-calendar-alt"></i> 2009</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/fullmetal.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes G -->
+                        <article class="anime-card" data-id="507" data-title="Gintama" data-genres="Ação,Comédia,Histórico,Paródia,Samurai,Sci-Fi,Shonen" data-image="images/gintama.jpg" data-rating="8.9" data-year="2006" data-language="Leg" data-description="Em um Japão feudal invadido por aliens, o samurai Sakata Gintoki faz trabalhos aleatórios." data-trailer="https://www.youtube.com/embed/DB_Kry2a03Y" data-download-page="animes/gintama.html">
+                           <div class="anime-card__image-container"> <img src="images/gintama.jpg" alt="Capa Gintama" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Gintama</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.9</span> <span><i class="fas fa-calendar-alt"></i> 2006</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/gintama.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="418" data-title="God of High School" data-genres="Ação,Artes Marciais,Sci-Fi,Sobrenatural,Comédia" data-image="images/anime2024_godofhighschool.jpg" data-rating="7.1" data-year="2020" data-language="Leg/Dub" data-description="Jin Mori participa de um torneio de artes marciais com poderes divinos." data-trailer="https://www.youtube.com/embed/MeaOU6yltHU" data-download-page="animes/godof.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_godofhighschool.jpg" alt="Capa God of High School" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">God of High School</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.1</span> <span><i class="fas fa-calendar-alt"></i> 2020</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/godof.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes H -->
+                         <article class="anime-card" data-id="419" data-title="Haikyu!!" data-genres="Comédia,Drama,Escolar,Shonen,Esporte" data-image="images/haikyuu.jpg" data-rating="8.9" data-year="2014" data-language="Leg/Dub" data-description="Shoyo Hinata se junta ao time de vôlei Karasuno com seu rival Kageyama." data-trailer="https://www.youtube.com/embed/ABMPQhA0O9Q" data-download-page="animes/haikyuu.html">
+                           <div class="anime-card__image-container"> <img src="images/haikyuu.jpg" alt="Capa Haikyu!!" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Haikyu!!</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.9</span> <span><i class="fas fa-calendar-alt"></i> 2014</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/haikyuu.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                         </article>
+                        <article class="anime-card" data-id="109" data-title="Hell's Paradise" data-genres="Ação,Aventura,Fantasia Sombria,Histórico" data-image="images/anime2025_hell_s2.jpg" data-rating="8.1" data-year="2023" data-language="Leg/Dub" data-description="Gabimaru busca o Elixir da Vida na ilha Shinsenkyo para obter perdão." data-trailer="https://www.youtube.com/embed/fX4_yqU02I0" data-download-page="animes/hellparadise.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2025_hell_s2.jpg" alt="Capa Hell's Paradise" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Hell's Paradise</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.1</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/hellparadise.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes I -->
+                        <article class="anime-card" data-id="508" data-title="Initial D First Stage" data-genres="Ação,Carros,Drama,Seinen,Esporte" data-image="images/initiald.jpg" data-rating="8.3" data-year="1998" data-language="Leg" data-description="Takumi Fujiwara se envolve no mundo das corridas de rua nas montanhas." data-trailer="https://www.youtube.com/embed/dlczgIcFzXU" data-download-page="animes/initiald.html">
+                           <div class="anime-card__image-container"> <img src="images/initiald.jpg" alt="Capa Initial D First Stage" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Initial D First Stage</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.3</span> <span><i class="fas fa-calendar-alt"></i> 1998</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/initiald.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="402" data-title="Ishura" data-genres="Ação,Aventura,Fantasia,Seinen" data-image="images/anime_ishura.jpg" data-rating="7.1" data-year="2024" data-language="Leg/Dub" data-description="Após a morte do Rei Demônio, semideuses lutam pelo título de Verdadeiro Herói." data-trailer="https://www.youtube.com/embed/HMHTEIWo5zs" data-download-page="animes/ishura.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_ishura.jpg" alt="Capa Ishura" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Ishura</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.1</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/ishura.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes J -->
+                        <article class="anime-card" data-id="420" data-title="Jujutsu Kaisen" data-genres="Ação,Sobrenatural,Horror,Escolar,Shonen" data-image="images/jujutsu.jpg" data-rating="8.6" data-year="2020" data-language="Leg/Dub" data-description="Yuji Itadori entra no mundo dos feiticeiros Jujutsu após engolir um dedo amaldiçoado." data-trailer="https://www.youtube.com/embed/pkKu9hLT-t8" data-download-page="animes/jujutsu.html">
+                           <div class="anime-card__image-container"> <img src="images/jujutsu.jpg" alt="Capa Jujutsu Kaisen" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Jujutsu Kaisen</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.6</span> <span><i class="fas fa-calendar-alt"></i> 2020</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/jujutsu.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                     </div>
+                </section>
+
+                 <!-- ======================= -->
+                 <!-- CAROUSEL K - O         -->
+                 <!-- ======================= -->
+                <section class="anime-carousel-section">
+                    <h3 class="carousel-title">K - O</h3>
+                    <div class="anime-carousel-container">
+                         <!-- Animes K -->
+                        <article class="anime-card" data-id="106" data-title="Kaiju No. 8" data-genres="Ação,Sci-Fi,Horror,Shonen" data-image="images/kaiju_8.jpg" data-rating="8.7" data-year="2024" data-language="Leg/Dub" data-description="Kafka Hibino ganha o poder de se transformar em um monstro Kaiju." data-trailer="https://www.youtube.com/embed/4Sdf-geku1A" data-download-page="animes/kaiju8.html">
+                           <div class="anime-card__image-container"> <img src="images/kaiju_8.jpg" alt="Capa Kaiju No. 8" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Kaiju No. 8</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/kaiju8.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes L -->
+                        <article class="anime-card" data-id="421" data-title="Little Witch Academia" data-genres="Aventura,Comédia,Magia,Fantasia,Escolar" data-image="images/anime2024_littlewitch.jpg" data-rating="7.9" data-year="2017" data-language="Leg/Dub" data-description="Akko Kagari se matricula na Academia Mágica Luna Nova para se tornar uma bruxa." data-trailer="https://www.youtube.com/embed/gvkbFOCU_F0" data-download-page="animes/little.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_littlewitch.jpg" alt="Capa Little Witch Academia" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Little Witch Academia</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2017</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/little.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="405" data-title="Long Zu (Dragon Raja)" data-genres="Ação,Fantasia,Escolar,Donghua" data-image="images/anime_long_zu.jpg" data-rating="7.2" data-year="2022" data-language="Leg" data-description="Lu Mingfei entra em uma academia que treina híbridos humano-dragão." data-trailer="https://www.youtube.com/embed/cd-1cT9bkn0" data-download-page="animes/longzu.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_long_zu.jpg" alt="Capa Long Zu" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Long Zu (Dragon Raja)</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.2</span> <span><i class="fas fa-calendar-alt"></i> 2022</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/longzu.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes M -->
+                        <article class="anime-card" data-id="509" data-title="Made in Abyss" data-genres="Aventura,Fantasia Sombria,Drama,Mistério,Sci-Fi" data-image="images/madeinabyss.jpg" data-rating="8.8" data-year="2017" data-language="Leg/Dub" data-description="Uma jovem órfã desce ao perigoso Abismo para encontrar sua mãe." data-trailer="https://www.youtube.com/embed/DiqFu6A8-xQ" data-download-page="animes/madeinabyss.html">
+                           <div class="anime-card__image-container"> <img src="images/madeinabyss.jpg" alt="Capa Made in Abyss" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Made in Abyss</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.8</span> <span><i class="fas fa-calendar-alt"></i> 2017</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/madeinabyss.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="422" data-title="Mashle: Magic and Muscles" data-genres="Ação,Comédia,Fantasia,Paródia,Escolar,Shonen" data-image="images/mashle_2024.jpg" data-rating="7.9" data-year="2023" data-language="Leg/Dub" data-description="Mash Burnedead usa força física para sobreviver em uma academia de magia." data-trailer="https://www.youtube.com/embed/xKONlTec7CQ" data-download-page="animes/mashle.html">
+                           <div class="anime-card__image-container"> <img src="images/mashle_2024.jpg" alt="Capa Mashle: Magic and Muscles" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Mashle: Magic and Muscles</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/mashle.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="423" data-title="Mo Dao Zu Shi" data-genres="Ação,Aventura,Mistério,Sobrenatural,Histórico,Donghua" data-image="images/anime2024_modaozushi.jpg" data-rating="8.4" data-year="2018" data-language="Leg/Dub" data-description="Wei Wuxian reencarna e desvenda mistérios com Lan Wangji." data-trailer="https://www.youtube.com/embed/ZP6gk7vFr4A" data-download-page="animes/modao.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_modaozushi.jpg" alt="Capa Mo Dao Zu Shi" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Mo Dao Zu Shi</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2018</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/modao.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="424" data-title="Mob Psycho 100" data-genres="Ação,Slice of Life,Comédia,Sobrenatural" data-image="images/anime2022_mob_s3.jpg" data-rating="8.7" data-year="2016" data-language="Leg/Dub" data-description="Shigeo 'Mob' Kageyama tenta controlar seus poderes psíquicos." data-trailer="https://www.youtube.com/embed/bOh9SS_pItA" data-download-page="animes/mob.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2022_mob_s3.jpg" alt="Capa Mob Psycho 100" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Mob Psycho 100</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2016</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/mob.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="425" data-title="Mushoku Tensei: Jobless Reincarnation" data-genres="Aventura,Drama,Fantasia,Isekai,Ecchi" data-image="images/anime2024_mushoku_s2p2.jpg" data-rating="8.7" data-year="2021" data-language="Leg/Dub" data-description="Homem reencarna como Rudeus Greyrat e decide viver sua nova vida ao máximo." data-trailer="https://www.youtube.com/embed/R3SFqVniGP8" data-download-page="animes/mushokutensei.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_mushoku_s2p2.jpg" alt="Capa Mushoku Tensei" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Mushoku Tensei</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2021</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/mushokutensei.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="426" data-title="My Hero Academia" data-genres="Ação,Escolar,Superpoderes,Shonen" data-image="images/anime2024_mha_s7.jpg" data-rating="7.9" data-year="2016" data-language="Leg/Dub" data-description="Izuku Midoriya sonha em ser herói em um mundo onde superpoderes são comuns." data-trailer="https://www.youtube.com/embed/EPVkcwyLQQ8" data-download-page="animes/bokuhero7.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_mha_s7.jpg" alt="Capa My Hero Academia" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">My Hero Academia</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2016</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/bokuhero7.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes N -->
+                         <article class="anime-card" data-id="427" data-title="Naruto Shippuden" data-genres="Ação,Aventura,Comédia,Artes Marciais,Shonen" data-image="images/naruto.jpg" data-rating="8.7" data-year="2007" data-language="Leg/Dub" data-description="Naruto retorna a Konoha pronto para novas ameaças e buscar seu amigo Sasuke." data-trailer="https://www.youtube.com/embed/1dy2zPPrKD8" data-download-page="animes/naruto.html">
+                           <div class="anime-card__image-container"> <img src="images/naruto.jpg" alt="Capa Naruto Shippuden" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Naruto Shippuden</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2007</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/naruto.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="510" data-title="Neon Genesis Evangelion" data-genres="Ação,Sci-Fi,Drama,Psicológico,Mecha" data-image="images/evangelion.jpg" data-rating="8.5" data-year="1995" data-language="Leg/Dub" data-description="Adolescentes pilotam mechas Evangelions para proteger o mundo de Anjos." data-trailer="https://www.youtube.com/embed/13n-MZB_H24" data-download-page="animes/evangelion.html">
+                           <div class="anime-card__image-container"> <img src="images/evangelion.jpg" alt="Capa Neon Genesis Evangelion" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Neon Genesis Evangelion</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.5</span> <span><i class="fas fa-calendar-alt"></i> 1995</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/evangelion.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="428" data-title="Ninja Kamui" data-genres="Ação,Sci-Fi,Thriller,Ninja" data-image="images/ninja_kamui.jpg" data-rating="7.7" data-year="2024" data-language="Leg/Dub" data-description="Ex-ninja busca vingança contra a organização que assassinou sua família." data-trailer="https://www.youtube.com/embed/IldG7q_u4zU" data-download-page="animes/ninjakamui.html">
+                           <div class="anime-card__image-container"> <img src="images/ninja_kamui.jpg" alt="Capa Ninja Kamui" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Ninja Kamui</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.7</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/ninjakamui.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes O -->
+                        <article class="anime-card" data-id="429" data-title="One Punch Man" data-genres="Ação,Comédia,Paródia,Sci-Fi,Superpoderes" data-image="images/onepunchman.jpg" data-rating="8.5" data-year="2015" data-language="Leg/Dub" data-description="Saitama derrota qualquer inimigo com um soco, levando-o ao tédio." data-trailer="https://www.youtube.com/embed/Poo5lRbBiFA" data-download-page="animes/onepunch1.html">
+                           <div class="anime-card__image-container"> <img src="images/onepunchman.jpg" alt="Capa One Punch Man" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">One Punch Man</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.5</span> <span><i class="fas fa-calendar-alt"></i> 2015</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/onepunch1.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                 <!-- ======================= -->
+                 <!-- CAROUSEL P - T         -->
+                 <!-- ======================= -->
+                <section class="anime-carousel-section">
+                    <h3 class="carousel-title">P - T</h3>
+                    <div class="anime-carousel-container">
+                         <!-- Animes P -->
+                         <article class="anime-card" data-id="511" data-title="Parasyte -the maxim-" data-genres="Ação,Sci-Fi,Horror,Psicológico,Drama,Seinen" data-image="images/parasyte.jpg" data-rating="8.4" data-year="2014" data-language="Leg/Dub" data-description="Shinichi Izumi aprende a coexistir com Migi, um parasita alienígena." data-trailer="https://www.youtube.com/embed/RJc44MhOR3E" data-download-page="animes/parasyte.html">
+                           <div class="anime-card__image-container"> <img src="images/parasyte.jpg" alt="Capa Parasyte -the maxim-" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Parasyte -the maxim-</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2014</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/parasyte.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="502" data-title="Psycho-Pass" data-genres="Ação,Sci-Fi,Policial,Psicológico" data-image="images/psychopass.jpg" data-rating="8.3" data-year="2012" data-language="Leg/Dub" data-description="Inspetora Akane Tsunemori caça criminosos latentes com a ajuda de executores." data-trailer="https://www.youtube.com/embed/YzuJnyebc40" data-download-page="animes/psychopass.html">
+                           <div class="anime-card__image-container"> <img src="images/psychopass.jpg" alt="Capa Psycho-Pass" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Psycho-Pass</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.3</span> <span><i class="fas fa-calendar-alt"></i> 2012</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/psychopass.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes Q -->
+                         <article class="anime-card" data-id="512" data-title="Queen's Blade: Rurou no Senshi" data-genres="Ação,Aventura,Ecchi,Fantasia" data-image="images/queensblade.jpg" data-rating="6.3" data-year="2009" data-language="Leg" data-description="Guerreiras competem no torneio Queen's Blade para determinar a próxima rainha." data-trailer="https://www.youtube.com/embed/V9jJXZv9_aI" data-download-page="animes/queensblade.html">
+                           <div class="anime-card__image-container"> <img src="images/queensblade.jpg" alt="Capa Queen's Blade" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Queen's Blade</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 6.3</span> <span><i class="fas fa-calendar-alt"></i> 2009</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/queensblade.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="503" data-title="Quintessential Quintuplets" data-genres="Comédia,Harém,Romance,Escolar,Shonen" data-image="images/quintessential.jpg" data-rating="7.9" data-year="2019" data-language="Leg/Dub" data-description="Estudante pobre é contratado como tutor de cinco gêmeas idênticas." data-trailer="https://www.youtube.com/embed/p3pgY_69gMk" data-download-page="animes/quintessential.html">
+                           <div class="anime-card__image-container"> <img src="images/quintessential.jpg" alt="Capa Quintessential Quintuplets" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Quintessential Quintuplets</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.9</span> <span><i class="fas fa-calendar-alt"></i> 2019</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/quintessential.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes R -->
+                        <article class="anime-card" data-id="401" data-title="Ragna Crimson" data-genres="Ação,Fantasia Sombria,Drama,Shonen" data-image="images/anime_ragna_crimson.jpg" data-rating="7.7" data-year="2023" data-language="Leg/Dub" data-description="Ragna une forças com Crimson para erradicar todos os dragões." data-trailer="https://www.youtube.com/embed/U_grtjdstks" data-download-page="animes/ragnar.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_ragna_crimson.jpg" alt="Capa Ragna Crimson" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Ragna Crimson</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.7</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/ragnar.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="432" data-title="Reincarnated as a Slime" data-genres="Ação,Aventura,Comédia,Fantasia,Isekai" data-image="images/anime2024_slime_s3.jpg" data-rating="8.4" data-year="2018" data-language="Leg/Dub" data-description="Homem reencarna como slime poderoso e constrói uma nação de monstros." data-trailer="https://www.youtube.com/embed/GIO9C2qjLF0" data-download-page="animes/tenseishittara.html">
+                             <div class="anime-card__image-container"> <img src="images/anime2024_slime_s3.jpg" alt="Capa Reincarnated as a Slime"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Reincarnated as a Slime</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2018</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/tenseishittara.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div>
+                        </article>
+
+                        <!-- Animes S -->
+                        <article class="anime-card" data-id="430" data-title="Sakamoto Days" data-genres="Ação,Comédia,Shonen" data-image="images/sakamoto_days.jpg" data-rating="N/A" data-year="2025" data-language="Leg/Dub" data-description="O maior assassino aposentado protege sua vida pacata como dono de loja." data-trailer="https://www.youtube.com/embed/ExWCdVx4qRY" data-download-page="animes/sakamoto.html">
+                           <div class="anime-card__image-container"> <img src="images/sakamoto_days.jpg" alt="Capa Sakamoto Days" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Sakamoto Days</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> N/A</span> <span><i class="fas fa-calendar-alt"></i> 2025</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/sakamoto.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="407" data-title="Sentai Daishikkaku" data-genres="Ação,Sci-Fi,Shonen" data-image="images/anime_sentai_daishikkaku.jpg" data-rating="7.4" data-year="2024" data-language="Leg" data-description="Soldado vilão se infiltra na organização heroica dos Dragon Keepers." data-trailer="https://www.youtube.com/embed/oHLgsVxEueQ" data-download-page="animes/sentai.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_sentai_daishikkaku.jpg" alt="Capa Sentai Daishikkaku" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Sentai Daishikkaku</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.4</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/sentai.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div>
+                        </article>
+                         <article class="anime-card" data-id="403" data-title="Shinman Ossan to Sekai Tabi" data-genres="Slice of Life,Comédia,Fantasia,Aventura,Isekai" data-image="images/anime_shinmanossan.jpg" data-rating="7.5" data-year="2024" data-language="Leg" data-description="Homem reencarnado com 'Olho Divino' viaja pelo mundo de forma relaxada." data-trailer="https://www.youtube.com/embed/j3bD6B-oIt4" data-download-page="animes/shinmanossan.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_shinmanossan.jpg" alt="Capa Shinman Ossan" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Shinman Ossan</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.5</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/shinmanossan.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="108" data-title="Solo Leveling" data-genres="Ação,Aventura,Fantasia" data-image="images/solo.jpg" data-rating="8.4" data-year="2024" data-language="Leg/Dub" data-description="Sung Jinwoo ganha um sistema que o permite subir de nível infinitamente." data-trailer="https://www.youtube.com/embed/NxAg3wAu4N0" data-download-page="animes/solo.html">
+                           <div class="anime-card__image-container"> <img src="images/solo.jpg" alt="Capa Solo Leveling" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Solo Leveling</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/solo.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="108-S1" data-title="Solo Leveling S1" data-genres="Ação,Aventura,Fantasia" data-image="images/solo1.jpg" data-rating="8.4" data-year="2024" data-language="Leg/Dub" data-description="A primeira temporada da jornada de Sung Jinwoo, o caçador mais fraco do mundo." data-trailer="https://www.youtube.com/embed/ujv2fLp3lU8" data-download-page="animes/solo1.html">
+                            <div class="anime-card__image-container"> <img src="images/solo1.jpg" alt="Capa Solo Leveling (Temporada 1)" loading="lazy"> </div>
+                            <div class="anime-card__content"> <h3 class="anime-card__title">Solo Leveling S1</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/solo1.html" class="btn btn--primary"> <i class="fas fa-download"></i> Download </a> </div> </div>
+                         </article>
+                        <article class="anime-card" data-id="431" data-title="Spy x Family" data-genres="Ação,Comédia,Espionagem,Slice of Life,Shonen" data-image="images/spyx.jpg" data-rating="8.6" data-year="2022" data-language="Leg/Dub" data-description="Um espião, uma assassina e uma telepata formam uma família falsa." data-trailer="https://www.youtube.com/embed/Ofgwr2qv1tI" data-download-page="animes/spyx.html">
+                           <div class="anime-card__image-container"> <img src="images/spyx.jpg" alt="Capa Spy x Family" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Spy x Family</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.6</span> <span><i class="fas fa-calendar-alt"></i> 2022</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/spyx.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes T -->
+                        <article class="anime-card" data-id="406" data-title="Takt Op. Destiny" data-genres="Ação,Fantasia,Música,Drama" data-image="images/anime_takt_op.jpg" data-rating="7.0" data-year="2021" data-language="Leg/Dub" data-description="'Musicarts' e 'Conductores' lutam usando música clássica contra monstros." data-trailer="https://www.youtube.com/embed/cnGr30mbypo" data-download-page="animes/destiny.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_takt_op.jpg" alt="Capa Takt Op. Destiny" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Takt Op. Destiny</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.0</span> <span><i class="fas fa-calendar-alt"></i> 2021</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/destiny.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="433" data-title="The Ancient Magus' Bride" data-genres="Fantasia,Drama,Romance,Slice of Life,Sobrenatural" data-image="images/anime2024_ancientmagus.jpg" data-rating="8.1" data-year="2017" data-language="Leg/Dub" data-description="Chise Hatori é comprada por um mago não-humano e se torna sua aprendiz e noiva." data-trailer="https://www.youtube.com/embed/dyDlS0g9Dt4" data-download-page="animes/magus.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_ancientmagus.jpg" alt="Capa The Ancient Magus' Bride" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">The Ancient Magus' Bride</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.1</span> <span><i class="fas fa-calendar-alt"></i> 2017</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/magus.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="410" data-title="The Beginning After the End (Manhwa)" data-genres="Ação,Aventura,Fantasia,Isekai" data-image="images/anime_tbate_placeholder.jpg" data-rating="N/A" data-year="N/A" data-language="N/A" data-description="Rei Arthur reencarna em um novo mundo de magia. Adaptação aguardada." data-trailer="https://www.youtube.com/embed/MMzyNGjSNG4" data-download-page="animes/theend.html">
+                           <div class="anime-card__image-container"> <img src="images/anime_tbate_placeholder.jpg" alt="Capa The Beginning After the End" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">The Beginning After the End</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> N/A</span> <span><i class="fas fa-calendar-alt"></i> N/A</span> <span><i class="fas fa-globe"></i> N/A</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/theend.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="434" data-title="The Irregular at Magic High School" data-genres="Ação,Sci-Fi,Sobrenatural,Romance,Escolar" data-image="images/anime2024_magichighschool.jpg" data-rating="7.5" data-year="2014" data-language="Leg/Dub" data-description="Tatsuya Shiba, um estudante irregular, navega pela academia de magia." data-trailer="https://www.youtube.com/embed/GkgS1XwF9fs" data-download-page="animes/mahouka.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_magichighschool.jpg" alt="Capa The Irregular at Magic High School" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">The Irregular at Magic High...</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.5</span> <span><i class="fas fa-calendar-alt"></i> 2014</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/mahouka.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="435" data-title="The King's Avatar" data-genres="Ação,Jogo,Aventura,Comédia,Donghua" data-image="images/anime2024_thekingsavatar.jpg" data-rating="8.3" data-year="2017" data-language="Leg/Dub" data-description="Ye Xiu, jogador profissional lendário, recomeça do zero no jogo Glory." data-trailer="https://www.youtube.com/embed/M5mdtZZBeFg" data-download-page="animes/avatar.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_thekingsavatar.jpg" alt="Capa The King's Avatar" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">The King's Avatar</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.3</span> <span><i class="fas fa-calendar-alt"></i> 2017</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/avatar.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                         <article class="anime-card" data-id="436" data-title="Tower of God" data-genres="Ação,Aventura,Mistério,Drama,Fantasia" data-image="images/anime2024_towerofgod.jpg" data-rating="7.5" data-year="2020" data-language="Leg/Dub" data-description="Bam entra na misteriosa Torre em busca de sua amiga Rachel." data-trailer="https://www.youtube.com/embed/T0Yy5frs7zI" data-download-page="animes/towerof.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_towerofgod.jpg" alt="Capa Tower of God" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Tower of God</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.5</span> <span><i class="fas fa-calendar-alt"></i> 2020</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/towerof.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                 <!-- ======================= -->
+                 <!-- CAROUSEL U - Z         -->
+                 <!-- ======================= -->
+                <section class="anime-carousel-section">
+                    <h3 class="carousel-title">U - Z</h3>
+                    <div class="anime-carousel-container">
+                         <!-- Animes U -->
+                        <article class="anime-card" data-id="437" data-title="Übel Blatt" data-genres="Ação,Aventura,Fantasia Sombria,Seinen" data-image="images/anime2024_ubelblat.jpg" data-rating="N/A" data-year="2025" data-language="Leg/Dub" data-description="Koinzell busca vingança contra os heróis que o traíram." data-trailer="https://www.youtube.com/embed/1JLxln6n_jM" data-download-page="animes/ubel.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_ubelblat.jpg" alt="Capa Übel Blatt" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Übel Blatt</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> N/A</span> <span><i class="fas fa-calendar-alt"></i> 2025</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/ubel.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="513" data-title="Uzaki-chan Wants to Hang Out!" data-genres="Comédia,Romance,Slice of Life,Ecchi" data-image="images/uzakichan.jpg" data-rating="7.2" data-year="2020" data-language="Leg/Dub" data-description="Hana Uzaki decide animar a vida de seu senpai introvertido, Shinichi Sakurai." data-trailer="https://www.youtube.com/embed/fQ3F3KiW_M" data-download-page="animes/uzakichan.html">
+                           <div class="anime-card__image-container"> <img src="images/uzakichan.jpg" alt="Capa Uzaki-chan Wants to Hang Out!" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Uzaki-chan Wants to Hang...</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.2</span> <span><i class="fas fa-calendar-alt"></i> 2020</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/uzakichan.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes V -->
+                        <article class="anime-card" data-id="438" data-title="Vampire Knight" data-genres="Drama,Mistério,Romance,Shoujo,Sobrenatural,Vampiro" data-image="images/anime2024_vampireknight.jpg" data-rating="6.8" data-year="2008" data-language="Leg/Dub" data-description="Yuki Cross protege o segredo da Classe Noturna composta por vampiros." data-trailer="https://www.youtube.com/embed/CGQg-eWxevA" data-download-page="animes/vampire.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_vampireknight.jpg" alt="Capa Vampire Knight" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Vampire Knight</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 6.8</span> <span><i class="fas fa-calendar-alt"></i> 2008</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/vampire.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="439" data-title="Vinland Saga" data-genres="Ação,Aventura,Drama,Histórico,Seinen" data-image="images/anime2025_vinland_s2.jpg" data-rating="8.7" data-year="2019" data-language="Leg/Dub" data-description="Thorfinn busca vingança pela morte do pai em meio às guerras vikings." data-trailer="https://www.youtube.com/embed/ML_alfGj_ms" data-download-page="animes/vinland2.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2025_vinland_s2.jpg" alt="Capa Vinland Saga" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Vinland Saga</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2019</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/vinland2.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes W -->
+                         <article class="anime-card" data-id="514" data-title="Welcome to the N.H.K." data-genres="Comédia,Drama,Psicológico,Romance" data-image="images/nhk.jpg" data-rating="8.2" data-year="2006" data-language="Leg" data-description="Jovem hikikomori acredita em uma conspiração e conhece uma garota misteriosa." data-trailer="https://www.youtube.com/embed/219YxuIy4G0" data-download-page="animes/nhk.html">
+                           <div class="anime-card__image-container"> <img src="images/nhk.jpg" alt="Capa Welcome to the N.H.K." loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Welcome to the N.H.K.</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.2</span> <span><i class="fas fa-calendar-alt"></i> 2006</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/nhk.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="440" data-title="Wind Breaker" data-genres="Ação,Delinquentes,Escolar" data-image="images/anime2024_windbreaker.jpg" data-rating="7.7" data-year="2024" data-language="Leg" data-description="Haruka Sakura entra na escola Furin para chegar ao topo pela força." data-trailer="https://www.youtube.com/embed/62r_G9bEPlU" data-download-page="animes/windbreak.html">
+                           <div class="anime-card__image-container"> <img src="images/anime2024_windbreaker.jpg" alt="Capa Wind Breaker" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Wind Breaker</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.7</span> <span><i class="fas fa-calendar-alt"></i> 2024</span> <span><i class="fas fa-globe"></i> Leg</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/windbreak.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes X -->
+                         <article class="anime-card" data-id="515" data-title="X-Men (2011)" data-genres="Ação,Sci-Fi,Superpoderes" data-image="images/xmen_anime.jpg" data-rating="6.5" data-year="2011" data-language="Leg/Dub" data-description="Os X-Men viajam ao Japão para investigar o desaparecimento de Hisako Ichiki." data-trailer="https://www.youtube.com/embed/pSAb0QAu4sY" data-download-page="animes/xmen_anime.html">
+                           <div class="anime-card__image-container"> <img src="images/xmen_anime.jpg" alt="Capa X-Men (2011)" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">X-Men (2011)</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 6.5</span> <span><i class="fas fa-calendar-alt"></i> 2011</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/xmen_anime.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                         <!-- Animes Y -->
+                        <article class="anime-card" data-id="516" data-title="Yu Yu Hakusho" data-genres="Ação,Comédia,Demônios,Sobrenatural,Artes Marciais,Shonen" data-image="images/yuyuhakusho.jpg" data-rating="8.4" data-year="1992" data-language="Leg/Dub" data-description="Yusuke Urameshi ganha uma segunda chance como Detetive Espiritual." data-trailer="https://www.youtube.com/embed/MX37clt_-U0" data-download-page="animes/yuyuhakusho.html">
+                           <div class="anime-card__image-container"> <img src="images/yuyuhakusho.jpg" alt="Capa Yu Yu Hakusho" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Yu Yu Hakusho</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.4</span> <span><i class="fas fa-calendar-alt"></i> 1992</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/yuyuhakusho.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="505" data-title="Your Lie in April" data-genres="Drama,Música,Romance,Escolar,Shonen" data-image="images/yourlie.jpg" data-rating="8.6" data-year="2014" data-language="Leg/Dub" data-description="Kousei Arima reencontra a paixão pela música ao conhecer a violinista Kaori." data-trailer="https://www.youtube.com/embed/3aL0gDZtFbE" data-download-page="animes/yourlie.html">
+                           <div class="anime-card__image-container"> <img src="images/yourlie.jpg" alt="Capa Your Lie in April" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Your Lie in April</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 8.6</span> <span><i class="fas fa-calendar-alt"></i> 2014</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/yourlie.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                        <!-- Animes Z -->
+                        <article class="anime-card" data-id="517" data-title="Zatch Bell!" data-genres="Aventura,Comédia,Magia,Sobrenatural,Shonen" data-image="images/zatchbell.jpg" data-rating="7.8" data-year="2003" data-language="Leg/Dub" data-description="Kiyo Takamine se junta a Zatch Bell em uma batalha pelo trono do Mundo Mamodo." data-trailer="https://www.youtube.com/embed/7kPUDG9jOJY" data-download-page="animes/zatchbell.html">
+                           <div class="anime-card__image-container"> <img src="images/zatchbell.jpg" alt="Capa Zatch Bell!" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Zatch Bell!</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.8</span> <span><i class="fas fa-calendar-alt"></i> 2003</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/zatchbell.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+                        <article class="anime-card" data-id="506" data-title="Zom 100: Bucket List of the Dead" data-genres="Ação,Comédia,Horror,Sobrenatural,Shonen" data-image="images/zom100.jpg" data-rating="7.7" data-year="2023" data-language="Leg/Dub" data-description="Akira se sente vivo quando um apocalipse zumbi o liberta de seu trabalho." data-trailer="https://www.youtube.com/embed/l2l_w06J3I" data-download-page="animes/zom100.html">
+                           <div class="anime-card__image-container"> <img src="images/zom100.jpg" alt="Capa Zom 100" loading="lazy"> </div> <div class="anime-card__content"> <h3 class="anime-card__title">Zom 100: Bucket List...</h3> <div class="anime-card__info"> <span><i class="fas fa-star"></i> 7.7</span> <span><i class="fas fa-calendar-alt"></i> 2023</span> <span><i class="fas fa-globe"></i> Leg/Dub</span> </div> <div class="anime-card__actions"> <button class="btn btn--secondary btn--details">Detalhes</button> <a href="animes/zom100.html" target="_blank" class="btn btn--primary"><i class="fas fa-download"></i> Baixar</a> </div> </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Mensagem de "Nenhum Resultado" (Inicialmente Oculta) -->
+                <div id="no-results-message" style="display: none;">Nenhum anime encontrado com os filtros selecionados. Tente refinar sua busca!</div>
+
+                 <!-- Paginação (Ajustada para estilo moderno) -->
+                 <nav class="pagination" aria-label="Paginação de animes">
+                    <a href="#" class="prev disabled" title="Página Anterior"><i class="fas fa-chevron-left"></i></a> <!-- Exemplo estado desabilitado -->
+                    <span class="current" aria-current="page">1</span>
+                    <a href="anime2.html" title="Ir para a página 2">2</a>
+                    <a href="anime3.html" title="Ir para a página 3">3</a>
+                    <a href="anime4.html" title="Ir para a página 4">4</a>
+                    <a href="anime5.html" title="Ir para a página 5">5</a>
+                    <a href="anime6.html" title="Ir para a página 6">6</a>
+                    <a href="anime7.html" title="Ir para a página 7">7</a>
+                    <a href="anime8.html" title="Ir para a página 8">8</a>
+                    <a href="anime9.html" title="Ir para a página 9">9</a>
+                    <a href="anime10.html" class="next" title="Próxima Página"><i class="fas fa-chevron-right"></i></a>
+                 </nav>
+
+            </section> <!-- Fim #animes -->
+
+            <!-- Community Hub Section -->
+            <section id="community-hub" class="community-hub-section animated-section fade-in-up">
+                 <h2 class="section-title"><i class="fab fa-discord"></i> Conecte-se à Comunidade</h2>
+                 <p class="section-subtitle">Junte-se ao nosso servidor no Discord para discussões, eventos e muito mais!</p>
+                 <div class="discord-cta">
+                    <a href="https://discord.gg/WQbFau2crf" target="_blank" class="btn btn--primary btn--large btn--icon-left">
+                        <i class="fab fa-discord"></i> Entrar no QG DenyAnimeHub
+                    </a>
+                    <p>Onde a Akatsuki se reúne online!</p>
+                 </div>
+            </section> <!-- Fim #community-hub -->
+
+        </main> <!-- Fim .main-content-area -->
+
+        <!-- Sidebar -->
+        <aside class="sidebar animated-section fade-in-up">
+            <!-- Widgets da Sidebar (Mantidos da versão anterior) -->
+             <div class="sidebar-widget">
+                <h3><i class="fas fa-fire-alt"></i> Top Semanal</h3>
+                <ol class="ranking-list">
+                     <li>
+                        <a href="animes/kaiju8.html?id=8"> <img src="images/kaiju_8.jpg" alt="Thumbnail Kaiju No. 8"> <div class="rank-info"> <span class="title">Kaiju No. 8</span> <span class="details"> <span><i class="fas fa-star"></i> 8.9</span> <span><i class="fas fa-eye"></i> 185k views</span> </span> </div> </a>
+                    </li>
+                    <li>
+                        <a href="animes/demon4.html?id=6"> <img src="images/demon.jpg" alt="Thumbnail Demon Slayer"> <div class="rank-info"> <span class="title">Demon Slayer HT</span> <span class="details"> <span><i class="fas fa-star"></i> 8.8</span> <span><i class="fas fa-eye"></i> 170k views</span> </span> </div> </a>
+                    </li>
+                     <li>
+                        <a href="animes/solo.html?id=4"> <img src="images/solo.jpg" alt="Thumbnail Solo Leveling T2 Preview"> <div class="rank-info"> <span class="title">Solo Leveling T2</span> <span class="details"> <span><i class="fas fa-star"></i> HYPE</span> <span><i class="fas fa-eye"></i> 150k views</span> </span> </div> </a>
+                    </li>
+                     <li>
+                        <a href="animes/frieren.html?id=10"> <img src="images/anime2024_frieren.jpg" alt="Thumbnail Frieren"> <div class="rank-info"> <span class="title">Frieren</span> <span class="details"> <span><i class="fas fa-star"></i> 9.1</span> <span><i class="fas fa-eye"></i> 140k views</span> </span> </div> </a>
+                    </li>
+                    <li>
+                        <a href="animes/bokuhero7.html?id=11"> <img src="images/anime2024_mha_s7.jpg" alt="Thumbnail My Hero Academia T7"> <div class="rank-info"> <span class="title">My Hero Academia T7</span> <span class="details"> <span><i class="fas fa-star"></i> 8.2</span> <span><i class="fas fa-eye"></i> 135k views</span> </span> </div> </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-crown"></i> Hall da Fama</h3>
+                 <ol class="ranking-list">
+                     <li>
+                        <a href="animes/fullmetal.html?id=14"> <img src="images/fullmetal.jpg" alt="Thumbnail FMAB"> <div class="rank-info"> <span class="title">Fullmetal Alchemist: Bro...</span> <span class="details"> <span><i class="fas fa-star"></i> 9.1</span> <span><i class="fas fa-calendar-alt"></i> 2009</span> </span> </div> </a>
+                    </li>
+                    <li>
+                        <a href="animes/ataque.html?id=441"> <img src="images/ataque.jpg" alt="Thumbnail Attack on Titan"> <div class="rank-info"> <span class="title">Attack on Titan</span> <span class="details"> <span><i class="fas fa-star"></i> 9.0</span> <span><i class="fas fa-calendar-alt"></i> 2013</span> </span> </div> </a>
+                    </li>
+                     <li>
+                        <a href="animes/deathnote.html?id=667"> <img src="images/deathnote.jpg" alt="Thumbnail Death Note"> <div class="rank-info"> <span class="title">Death Note</span> <span class="details"> <span><i class="fas fa-star"></i> 9.0</span> <span><i class="fas fa-calendar-alt"></i> 2006</span> </span> </div> </a>
+                    </li>
+                    <li>
+                        <a href="animes/jujutsu.html?id=420"> <img src="images/jujutsu.jpg" alt="Thumbnail Jujutsu Kaisen"> <div class="rank-info"> <span class="title">Jujutsu Kaisen</span> <span class="details"> <span><i class="fas fa-star"></i> 8.6</span> <span><i class="fas fa-calendar-alt"></i> 2020</span> </span> </div> </a>
+                    </li>
+                     <li>
+                        <a href="animes/naruto.html?id=427"> <img src="images/naruto.jpg" alt="Thumbnail Naruto Shippuden"> <div class="rank-info"> <span class="title">Naruto Shippuden</span> <span class="details"> <span><i class="fas fa-star"></i> 8.7</span> <span><i class="fas fa-calendar-alt"></i> 2007</span> </span> </div> </a>
+                    </li>
+                 </ol>
+            </div>
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-cloud-download-alt"></i> Mais Requisitados</h3>
+                 <ol class="ranking-list">
+                     <li>
+                        <a href="animes/naruto.html?id=427"> <img src="images/naruto.jpg" alt="Thumbnail Naruto"> <div class="rank-info"> <span class="title">Naruto Shippuden</span> <span class="details"> <span><i class="fas fa-download"></i> 5.2M+ Dls</span> </span> </div> </a>
+                     </li>
+                     <li>
+                         <a href="animes/deathnote.html?id=667"> <img src="images/anime2006_deathnote.jpg" alt="Thumbnail Death Note"> <div class="rank-info"> <span class="title">Death Note</span> <span class="details"> <span><i class="fas fa-download"></i> 4.9M+ Dls</span> </span> </div> </a>
+                     </li>
+                     <li>
+                         <a href="animes/jujutsu.html?id=420"> <img src="images/jujutsu.jpg" alt="Thumbnail Jujutsu Kaisen"> <div class="rank-info"> <span class="title">Jujutsu Kaisen</span> <span class="details"> <span><i class="fas fa-download"></i> 4.8M+ Dls</span> </span> </div> </a>
+                     </li>
+                     <li>
+                         <a href="animes/fullmetal.html?id=14"> <img src="images/fullmetal.jpg" alt="Thumbnail FMAB"> <div class="rank-info"> <span class="title">Fullmetal Alchemist: Bro...</span> <span class="details"> <span><i class="fas fa-download"></i> 4.7M+ Dls</span> </span> </div> </a>
+                     </li>
+                     <li>
+                         <a href="animes/ataque.html?id=441"> <img src="images/ataque.jpg" alt="Thumbnail AoT"> <div class="rank-info"> <span class="title">Attack on Titan</span> <span class="details"> <span><i class="fas fa-download"></i> 4.6M+ Dls</span> </span> </div> </a>
+                     </li>
+                 </ol>
+            </div>
+        </aside> <!-- Fim .sidebar -->
+
+    </div> <!-- Fim .main-layout -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column footer-column--about">
+                    <div class="footer-logo"> <a href="index.html"> <img src="images/icone.png" alt="Logo DenyAnimeHub"> <span>DenyAnimeHub</span> </a> </div>
+                    <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                    <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+                </div>
+                <div class="footer-column footer-column--links">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html">Início</a></li> <li><a href="assistir.html">Assistir</a></li> <li><a href="noticias.html">Notícias</a></li> <li><a href="login.html">Login / Registro</a></li> <li><a href="https://discord.gg/WQbFau2crf" target="_blank">Comunidade Discord</a></li> <li><a href="#">Termos de Uso</a></li> <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-column--contact">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-contact-list">
+                        <li> <i class="fas fa-map-marker-alt"></i> <span>Angola, Luanda, Talatona</span> </li> <li> <a href="mailto:denyneves14@gmail.com"> <i class="fas fa-envelope"></i> <span>denyneves14@gmail.com</span> </a> </li> <li> <a href="tel:+244935995336"> <i class="fas fa-phone"></i> <span>+244 935 995 336</span> </a> </li> <li> <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer"> <i class="fab fa-whatsapp"></i> <span>WhatsApp</span> </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-column--social">
+                    <h4 class="footer-title">Siga-nos</h4>
+                    <ul class="footer-social-list">
+                        <li> <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"> <i class="fab fa-facebook-f"></i> </a> </li> <li> <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> </li> <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li> <li><a href="https://www.youtube.com/@memeiroitachi1264" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li> <li><a href="https://discord.gg/WQbFau2crf" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"> <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p> </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Detalhes do Anime -->
+     <div id="anime-modal" class="modal">
+         <div class="modal__content">
+            <button class="modal__close" id="modal-close-btn" aria-label="Fechar modal">×</button>
+            <div class="modal__header">
+                <h2 id="modal-title">Título do Anime</h2>
+                <div class="anime-card__info" id="modal-info">
+                     <span><i class="fas fa-star"></i> N/A</span> <span><i class="fas fa-calendar-alt"></i> N/A</span> <span><i class="fas fa-globe"></i> N/A</span>
+                 </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__media">
+                    <h4 class="text-accent mb-1">Trailer</h4>
+                    <iframe id="modal-trailer" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="trailer-placeholder" style="display: none;">Trailer indisponível.</p>
+                </div>
+                <div class="modal__details">
+                    <h4 class="text-accent mb-1">Sinopse</h4>
+                    <p id="modal-description">Descrição do anime...</p>
+                    <h4 class="text-accent mt-4 mb-1">Detalhes</h4>
+                    <p><i class="fas fa-star"></i><strong>Classificação:</strong> <span id="modal-rating-text">N/A</span></p>
+                    <p><i class="fas fa-calendar-day"></i><strong>Ano:</strong> <span id="modal-year-text">N/A</span></p>
+                    <p><i class="fas fa-comments"></i><strong>Idioma:</strong> <span id="modal-language-text">N/A</span></p>
+                    <div id="modal-episode-link-container">
+                        <a href="#" class="btn btn--primary btn--small" id="modal-watch-first-ep" style="display: none;"> <i class="fas fa-play"></i> Assistir Episódio 1 </a>
+                     </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <a href="#" id="modal-download-link" target="_blank" class="btn btn--secondary"><i class="fas fa-info-circle"></i> Página de Download</a>
+                <button class="btn btn--secondary" id="modal-close-btn-footer">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para o Script principal -->
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página Atualizado -->
+    <title>Detalhes: The Beginning After The End - DenyAnimeHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Caminho CSS mantido -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Caminho do Ícone mantido -->
+    <link rel="icon" href="../images/icone.png" type="image/png">
+</head>
+<body data-theme="light">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <!-- Link do Logo mantido -->
+                <a href="../index.html">
+                    <!-- Caminho da Imagem do Logo mantido -->
+                    <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                     <!-- Links de Navegação mantidos -->
+                     <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#animes">Animes</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li>
+                        <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon icon-moon"></i>
+                            <i class="fas fa-sun icon-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="anime-detail-section container">
+            <div class="anime-detail__grid">
+                <!-- Coluna Esquerda: Poster e Infos -->
+                <aside class="anime-detail__sidebar">
+                    <div class="anime-detail__poster">
+                        <!-- Caminho da Imagem do Poster Atualizado (Placeholder) -->
+                        <img src="../images/anime_tbate_placeholder.jpg" alt="Poster The Beginning After the End (Anime - Placeholder)">
+                    </div>
+                    <div class="anime-detail__info-block">
+                        <h4 class="text-accent mb-2">Informações</h4>
+                        <!-- Informações Atualizadas (Baseadas no Manhwa/Web Novel) -->
+                        <p><strong><i class="fas fa-star"></i> Classificação (Manhwa):</strong> 8.7 </p>
+                        <p><strong><i class="fas fa-calendar-alt"></i> Lançamento (Anime):</strong> 2024 </p>
+                        <p><strong><i class="fas fa-globe"></i> Idioma (Anime):</strong> Leg/Dub</p>
+                        <p><strong><i class="fas fa-film"></i> Estúdio:</strong> Studio Mir</p>
+                        <p><strong><i class="fas fa-tags"></i> Gêneros:</strong> Ação, Aventura, Fantasia, Isekai, Drama</p>
+                        <p><strong><i class="fas fa-tv"></i> Status (Anime):</strong> Adaptação (Oficial)</p>
+                    </div>
+                     <!-- Link interno para seção de episódios mantido -->
+                     <a href="#episode-list-title" class="btn btn--primary" style="width: 100%; margin-top: var(--spacing-md);"><i class="fas fa-list-ol"></i> Ir para Episódios</a>
+                </aside>
+
+                <!-- Coluna Direita: Conteúdo Principal -->
+                <article class="anime-detail__content">
+                    <!-- Título Principal Atualizado -->
+                    <h1>The Beginning After The End</h1>
+                    <!-- Subtítulo Atualizado -->
+                    <div class="subtitle">Adaptação Aguardada</div>
+
+                    <h4 class="text-accent mb-1">Sinopse</h4>
+                    <!-- Sinopse Atualizada -->
+                    <p>Após uma vida como o poderoso Rei Grey, ele reencarna em um novo mundo repleto de magia e monstros como Arthur Leywin. Mantendo as memórias de sua vida passada, Arthur está determinado a viver esta segunda chance ao máximo, corrigindo os erros do passado. Ele mergulha no aprendizado da mana, aprimora suas habilidades de combate e forma laços preciosos.</p>
+                    <p>No entanto, segredos sombrios e ameaças crescentes neste novo mundo logo o colocarão à prova, forçando-o a usar toda a sua experiência e poder para proteger aqueles que ama e enfrentar um destino incerto.</p>
+
+                    <h4 class="text-accent mt-3 mb-1">Trailer (Anime - Indisponível)</h4>
+
+                    <!-- Estrutura do Trailer Mantida, URL Placeholder -->
+                    <div class="anime-detail__trailer mb-3"
+                         style="display: flex; justify-content: center; align-items: center;">
+                        <!-- data-trailer placeholder -->
+                        <article class="anime-card" data-trailer="https://www.youtube.com/embed/MMzyNGjSNG4"
+                            style="width: 100%; max-width: 900px; height: auto; border-radius: 10px;
+                                   overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                                   padding: 50px; background: #1a1a1a; text-align: center; color: var(--text-secondary);">
+                            <p>Adaptação em anime ainda não anunciada oficialmente. Trailer indisponível.</p>
+                        </article>
+                    </div>
+
+                    <!-- Script Inline do Trailer Mantido (Funciona com o data-trailer atualizado) -->
+                    <script>
+                     document.addEventListener("DOMContentLoaded", function () {
+                         let animeCard = document.querySelector(".anime-detail__trailer .anime-card");
+                         if (animeCard) {
+                             let trailerUrl = animeCard.getAttribute("data-trailer");
+                              // Verifica se a URL não é um placeholder antes de tentar carregar o iframe
+                              if (trailerUrl && trailerUrl !== "#" && !trailerUrl.includes("placeholder")) {
+                                 let iframe = animeCard.querySelector("iframe"); // Procura por iframe se existir
+                                 if (!iframe) { // Se não existir, cria um
+                                      iframe = document.createElement('iframe');
+                                      iframe.style.width = '100%';
+                                      iframe.style.height = '400px';
+                                      iframe.style.borderRadius = '10px';
+                                      iframe.title = 'TBATE Trailer (Placeholder)'; // Título genérico
+                                      iframe.frameborder = '3';
+                                      iframe.allowfullscreen = true;
+                                      // Limpa o texto de placeholder e adiciona o iframe
+                                      animeCard.innerHTML = '';
+                                      animeCard.appendChild(iframe);
+                                 }
+                                 iframe.src = trailerUrl;
+                              } else {
+                                  // Mantém ou adiciona a mensagem de placeholder se não houver iframe
+                                  if (!animeCard.querySelector('p')) {
+                                     const p = document.createElement('p');
+                                     p.textContent = 'Adaptação em anime ainda não anunciada oficialmente. Trailer indisponível.';
+                                     animeCard.innerHTML = ''; // Limpa caso haja algo
+                                     animeCard.appendChild(p);
+                                  }
+                              }
+                         }
+                     });
+                     </script>
+
+
+                     <h4 class="text-accent mt-3 mb-1" id="episode-list-title">Episódios (Anime - Não Anunciado)</h4>
+                     <!-- Texto Atualizado -->
+                     <p class="text-secondary mb-2">A adaptação em anime de The Beginning After The End é muito aguardada, mas ainda não foi anunciada oficialmente.</p>
+                     <!-- Lista de Episódios Atualizada como Placeholder -->
+                     <ul class="episode-list">
+                     	<li><a href="#"><span>Leia o Manhwa/Web Novel!</span> <i class="fas fa-book"></i></a></li> <!-- Link para o material original -->
+                        <li><a href="#"><span>Episódio 01</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 02</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 03</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 04</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 05</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 06</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 07</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 08</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 09</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 10</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 11</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 12</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 13</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>(Aguardando Anúncio...)</span></a></li>
+                        
+                     </ul>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+     <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Coluna 1: Logo e Copyright -->
+            <div class="footer-column footer-column--about">
+                <div class="footer-logo">
+                    <a href="index.html">
+                         <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                         <span>DenyAnimeHub</span>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos (Opcional) -->
+            <div class="footer-column footer-column--links">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#animes">Animes</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="#comments">Comunidade</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="login.html">Login / Registro</a></li>
+                    <li><a href="#">Política de Privacidade</a></li> <!-- Exemplo -->
+                    <li><a href="#">Termos de Uso</a></li> <!-- Exemplo -->
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="footer-column footer-column--contact">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angola, Luanda, Talatona</span>
+                    </li>
+                    <li>
+                        <a href="mailto:denyneves14@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>denyneves14@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+244935995336">
+                            <i class="fas fa-phone"></i>
+                            <span>+244 935 995 336</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+244 935 995 336 (WhatsApp)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div class="footer-column footer-column--social">
+                <h4 class="footer-title">Siga-nos</h4>
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- Adicione mais redes se desejar -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li> -->
+                </ul>
+            </div>
+
+        </div> <!-- Fim .footer-grid -->
+
+         <!-- Linha Inferior Opcional -->
+         <div class="footer-bottom">
+             <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p>
+         </div>
+
+    </div> <!-- Fim .container -->
+</footer>
+
+    <!-- Caminho do Script Externo mantido -->
+    <script src="../script.js"></script>
+
+    <!-- Script Inline Mínimo Mantido -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle');
+            const bodyElement = document.body;
+
+            // --- Tema ---
+             const applyTheme = (theme) => {
+                if (bodyElement) {
+                    bodyElement.dataset.theme = theme;
+                    localStorage.setItem('theme', theme);
+                }
+            };
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            if (themeToggleButton && bodyElement) {
+                themeToggleButton.addEventListener('click', () => {
+                    const newTheme = bodyElement.dataset.theme === 'light' ? 'dark' : 'light';
+                    applyTheme(newTheme);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

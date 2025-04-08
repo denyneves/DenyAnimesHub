@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias (Pág. 2) - DenyAnimeHub</title> <!-- Título Alterado -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icone.png" type="image/png">
+</head>
+<body data-theme="light" class="page-noticias">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo"> <a href="index.html"> <img src="images/icone.ico" alt="Logo DenyAnimeHub" /> </a> </div>
+            <nav class="site-header__nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="Assistir.html">Assistir</a></li>
+                    <!-- Link de Notícias agora Ativo -->
+                    <li><a href="noticias.html" class="active">Notícias</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li> <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema"> <i class="fas fa-moon icon-moon"></i> <i class="fas fa-sun icon-sun"></i> </button> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Mantida, ajuste o conteúdo interno se desejar) -->
+    <section id="news-hero" class="news-hero-section animated-section fade-in-up">
+        <div class="container">
+            <div class="news-hero-content">
+               <h1><i class="fas fa-satellite-dish"></i> Central de Notícias Otaku</h1>
+               <p>Página 2: Mergulhe em mais novidades, análises e destaques do mundo otaku.</p>
+               <a href="#noticias-recentes-p2" class="btn btn--primary btn--large">Ver Notícias <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+         <!-- <div class="news-hero-overlay"></div> --> <!-- Removido conforme solicitação anterior -->
+    </section>
+
+
+    <div class="main-layout container">
+        <main class="main-content-area">
+
+            <!-- Notícia em Destaque (NOVA) -->
+            <section id="animes" class="anime-list">
+                 <h2 class="section-title-main"><i class="fas fa-star"></i> Em Destaque</h2>
+                 <article class="featured-news-card"
+                          data-news-id="dragonball-daima-trailer"
+                          data-title="Dragon Ball Daima: Novo Trailer Eletrizante Revela Mais da Trama e Data!"
+                          data-image="images/fundo.png" 
+                          data-date="18 de Julho, 2024"
+                          data-author="Equipe Deny"
+                          data-tags="Dragon Ball, Daima, Trailer, Anime, Akira Toriyama"
+                          data-full-content="A Toei Animation surpreendeu os fãs com um novo trailer de Dragon Ball Daima, a série inédita que conta com envolvimento direto do lendário Akira Toriyama antes de seu falecimento. O trailer mostra Goku, Vegeta e outros personagens em suas versões rejuvenescidas, enfrentando inimigos misteriosos em planetas desconhecidos. A animação parece vibrante e nostálgica, misturando elementos clássicos com um toque moderno. Foi confirmado que a série explora uma conspiração que afetou os Guerreiros Z e que a estreia mundial está marcada para Outubro de 2024, com exibição simultânea em diversas plataformas, incluindo a Crunchyroll. A expectativa é altíssima para ver como essa nova aventura se encaixa no cânone de Dragon Ball.">
+                    <div class="featured-news__image">
+                        <img src="images/logo.png" alt="Novo Trailer Dragon Ball Daima" />
+                         <span class="featured-badge">TRAILER NOVO</span>
+                    </div>
+                    <div class="featured-news__content">
+                        <div class="featured-news__meta">
+                            <span><i class="fas fa-calendar-alt"></i> 18 de Julho, 2024</span>
+                            <span><i class="fas fa-user"></i> Por Equipe Deny</span>
+                            <span><i class="fas fa-tags"></i> Dragon Ball, Daima</span>
+                        </div>
+                        <h3 class="featured-news__title">Dragon Ball Daima: Novo Trailer Eletrizante Revela Mais da Trama e Data!</h3>
+                        <p class="featured-news__excerpt">A Toei libera trailer inédito de Dragon Ball Daima, mostrando mais ação, personagens rejuvenescidos e confirmando a janela de estreia para Outubro de 2024!</p>
+                        <button class="btn btn--secondary btn--read-more" data-news-id="dragonball-daima-trailer"><i class="fas fa-book-open"></i> Leia a Matéria Completa</button>
+                    </div>
+                 </article>
+            </section>
+
+             <!-- Notícias Recentes Grid (NOVAS) -->
+             <section id="noticias-recentes-p2" class="anime-list animated-section fade-in"> <!-- ID alterado para unicidade -->
+                <h2 class="section-title-main"><i class="far fa-newspaper"></i> Mais Notícias Recentes</h2>
+                <div class="news-grid">
+                    <!-- Card Notícia 1 (NOVA) -->
+                    <article class="news-card"
+                             data-news-id="oshi-no-ko-s2-ep3"
+                             data-title="Oshi no Ko S2: Análise Episódio 3 - A Pressão Aumenta nos Bastidores"
+                             data-image="images/noticia_oshinoko_s2.jpg"
+                             data-date="17 Jul 2024"
+                             data-comments="12"
+                             data-category="Anime/Review"
+                             data-full-content="O terceiro episódio da segunda temporada de Oshi no Ko intensifica o drama nos bastidores da peça teatral 2.5D. Vemos Aqua navegando as complexas relações do elenco enquanto busca pistas sobre seu pai, Ruby enfrentando a pressão de sua primeira grande atuação e Akane mostrando sua genialidade interpretativa. A direção continua focando nas expressões e na tensão psicológica, adaptando fielmente o mangá. A qualidade da animação do Doga Kobo permanece alta, destacando os momentos chave do episódio.">
+                        <a href="#" class="news-card__link btn--read-more" data-news-id="oshi-no-ko-s2-ep3">
+                            <div class="news-card__image-container"> <img src="images/logo.png" alt="Oshi no Ko Temporada 2 Episódio 3" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                            <div class="news-card__content"> <span class="news-card__category">Anime/Review</span> <h4 class="news-card__title">Oshi no Ko S2: Análise Ep 3 - A Pressão nos Bastidores</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 17 Jul 2024</span> <span><i class="fas fa-comments"></i> 12</span> </div> </div>
+                        </a>
+                    </article>
+                    <!-- Card Notícia 2 (NOVA) -->
+                     <article class="news-card"
+                              data-news-id="gundam-requiem"
+                              data-title="Gundam: Requiem for Vengeance Chega à Netflix com Visual CG Impressionante"
+                              data-image="images/.png" 
+                              data-date="16 Jul 2024"
+                              data-comments="9"
+                              data-category="Anime/Streaming"
+                              data-full-content="A nova série original da Netflix, Mobile Suit Gundam: Requiem for Vengeance, já está disponível. Com apenas 6 episódios, a série se destaca pelo uso ambicioso do Unreal Engine 5 para criar um visual CG fotorrealista inédito na franquia. Ambientada durante a Guerra de Um Ano na frente europeia, a história oferece uma perspectiva sombria e madura do conflito. As primeiras impressões elogiam a qualidade visual e a atmosfera, mas alguns apontam um ritmo acelerado devido à curta duração.">
+                        <a href="#" class="news-card__link btn--read-more" data-news-id="gundam-requiem">
+                            <div class="news-card__image-container"> <img src="images/logo.png" alt="Gundam Requiem for Vengeance Netflix" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                            <div class="news-card__content"> <span class="news-card__category">Anime/Streaming</span> <h4 class="news-card__title">Gundam: Requiem for Vengeance Chega à Netflix</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 16 Jul 2024</span> <span><i class="fas fa-comments"></i> 9</span> </div> </div>
+                        </a>
+                    </article>
+                    <!-- Card Notícia 3 (NOVA) -->
+                     <article class="news-card"
+                              data-news-id="blue-lock-movie-inter"
+                              data-title="Blue Lock - Episode Nagi: Filme Ganha Datas Internacionais"
+                              data-image="images/images/anime2024_towerofgod.jpg"
+                              data-date="14 Jul 2024"
+                              data-comments="20"
+                              data-category="Anime/Filme"
+                              data-full-content="Após o sucesso no Japão, o filme spin-off 'Blue Lock The Movie - Episode Nagi' finalmente teve suas datas de estreia internacionais confirmadas pela Crunchyroll. O filme chegará aos cinemas de diversos países, incluindo Brasil e Portugal, a partir de Agosto de 2024 (datas específicas variam por região). Focado na perspectiva do gênio preguiçoso Seishiro Nagi, o filme promete aprofundar sua história e rivalidade com Reo Mikage antes e durante o projeto Blue Lock.">
+                         <a href="#" class="news-card__link btn--read-more" data-news-id="blue-lock-movie-inter">
+                             <div class="news-card__image-container"> <img src="images/logo.png" alt="Blue Lock Filme Episode Nagi" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                             <div class="news-card__content"> <span class="news-card__category">Anime/Filme</span> <h4 class="news-card__title">Blue Lock - Episode Nagi: Filme Ganha Datas Internacionais</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 14 Jul 2024</span> <span><i class="fas fa-comments"></i> 20</span> </div> </div>
+                         </a>
+                     </article>
+                    <!-- Card Notícia 4 (NOVA) -->
+                      <article class="news-card"
+                               data-news-id="tower-of-god-s2-reception"
+                               data-title="Tower of God S2 Estreia: Recepção Inicial e Mudanças na Adaptação"
+                               data-image="images/anime2024_towerofgod.jpg"
+                               data-date="15 Jul 2024"
+                               data-comments="30"
+                               data-category="Anime/Discussão"
+                               data-full-content="A tão esperada segunda temporada de Tower of God finalmente estreou, adaptando o intenso arco do 'Retorno do Príncipe'. A recepção inicial dos fãs tem sido majoritariamente positiva quanto à qualidade da animação do estúdio The Answer Studio, mas discussões surgiram sobre o ritmo da adaptação e algumas mudanças em relação ao webtoon original. Analisamos os principais pontos fortes e as críticas levantadas pela comunidade nos primeiros episódios.">
+                          <a href="#" class="news-card__link btn--read-more" data-news-id="tower-of-god-s2-reception">
+                              <div class="news-card__image-container"> <img src="images/logo.png" alt="Tower of God Temporada 2" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                              <div class="news-card__content"> <span class="news-card__category">Anime/Discussão</span> <h4 class="news-card__title">Tower of God S2: Recepção Inicial e Mudanças</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 15 Jul 2024</span> <span><i class="fas fa-comments"></i> 30</span> </div> </div>
+                          </a>
+                      </article>
+                     <!-- Card Notícia 5 (NOVA) -->
+                      <article class="news-card" data-news-id="ghibli-new-rumor" data-title="Novo Projeto do Studio Ghibli a Caminho? Hayao Miyazaki Estaria Envolvido?" data-image="images/noticia_ghibli.jpg" data-date="11 Jul 2024" data-comments="15" data-category="Rumor/Filme" data-full-content="Apesar de 'O Menino e a Garça' ter sido anunciado como seu último filme, rumores persistentes indicam que Hayao Miyazaki pode estar trabalhando em conceitos para um novo curta-metragem ou projeto especial para o Museu Ghibli. Fontes internas não confirmadas mencionam esboços e ideias sendo discutidas. O Studio Ghibli mantém silêncio oficial, mas a simples possibilidade de mais uma obra do mestre anima os fãs ao redor do mundo.">
+                          <a href="#" class="news-card__link btn--read-more" data-news-id="ghibli-new-rumor">
+                              <div class="news-card__image-container"> <img src="images/logo.png" alt="Studio Ghibli Hayao Miyazaki" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                              <div class="news-card__content"> <span class="news-card__category">Rumor/Filme</span> <h4 class="news-card__title">Novo Projeto do Studio Ghibli a Caminho?</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 11 Jul 2024</span> <span><i class="fas fa-comments"></i> 15</span> </div> </div>
+                          </a>
+                      </article>
+                      <!-- Card Notícia 6 (NOVA) -->
+                       <article class="news-card" data-news-id="omniscient-reader-anime" data-title="Webtoon de Sucesso 'Omniscient Reader's Viewpoint' Ganha Adaptação para Anime!" data-image="images/noticia_omniscient.jpg" data-date="10 Jul 2024" data-comments="38" data-category="Anime/Anúncio" data-full-content="Preparem-se! Um dos webtoons mais populares globalmente, 'Omniscient Reader's Viewpoint' (Leitor Onisciente), teve sua adaptação para anime oficialmente anunciada. Ainda não foram revelados detalhes sobre o estúdio responsável ou a data de estreia, mas um primeiro visual teaser foi divulgado, mostrando o protagonista Kim Dokja. A notícia foi recebida com enorme entusiasmo pelos fãs da complexa história de sobrevivência e meta-narrativa.">
+                           <a href="#" class="news-card__link btn--read-more" data-news-id="omniscient-reader-anime">
+                               <div class="news-card__image-container"> <img src="images/logo.png" alt="Omniscient Reader Anime" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                               <div class="news-card__content"> <span class="news-card__category">Anime/Anúncio</span> <h4 class="news-card__title">'Omniscient Reader's Viewpoint' Ganha Anime!</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 10 Jul 2024</span> <span><i class="fas fa-comments"></i> 38</span> </div> </div>
+                           </a>
+                       </article>
+                       <!-- Card Notícia 7 (NOVA) -->
+                       <article class="news-card" data-news-id="genshin-collab- bleach" data-title="Colaboração Épica: Genshin Impact x Bleach Anunciada Oficialmente!" data-image="images/noticia_genshin_bleach.jpg" data-date="09 Jul 2024" data-comments="55" data-category="Games/Collab" data-full-content="A HoYoverse e a Shueisha pegaram todos de surpresa ao anunciar uma colaboração massiva entre Genshin Impact e Bleach. O evento, previsto para a versão 5.0 do jogo, trará personagens icônicos como Ichigo Kurosaki e Rukia Kuchiki como unidades jogáveis por tempo limitado, além de armas, skins e uma nova área temática inspirada na Soul Society. Um trailer cinemático espetacular acompanhou o anúncio, quebrando a internet.">
+                            <a href="#" class="news-card__link btn--read-more" data-news-id="genshin-collab-bleach">
+                                <div class="news-card__image-container"> <img src="images/logo.png" alt="Genshin Impact Bleach Collab" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                                <div class="news-card__content"> <span class="news-card__category">Games/Collab</span> <h4 class="news-card__title">Colaboração Épica: Genshin Impact x Bleach Anunciada!</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 09 Jul 2024</span> <span><i class="fas fa-comments"></i> 55</span> </div> </div>
+                            </a>
+                       </article>
+                        <!-- Card Notícia 8 (NOVA) -->
+                       <article class="news-card" data-news-id="crunchyroll-updates" data-title="Crunchyroll Anuncia Novas Ferramentas Sociais e Expansão de Catálogo" data-image="images/noticia_crunchyroll.jpg" data-date="07 Jul 2024" data-comments="10" data-category="Streaming/Indústria" data-full-content="Em seu último comunicado, a Crunchyroll detalhou planos para introduzir novas funcionalidades sociais na plataforma, permitindo perfis customizáveis e listas de amigos. Além disso, a empresa anunciou a aquisição de licenças para diversos animes clássicos e filmes que serão adicionados ao catálogo nos próximos meses, reforçando sua posição como principal hub de streaming de anime no ocidente.">
+                           <a href="#" class="news-card__link btn--read-more" data-news-id="crunchyroll-updates">
+                               <div class="news-card__image-container"> <img src="images/logo.png" alt="Crunchyroll Updates" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                               <div class="news-card__content"> <span class="news-card__category">Streaming/Indústria</span> <h4 class="news-card__title">Crunchyroll Anuncia Novas Ferramentas Sociais e Catálogo</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 07 Jul 2024</span> <span><i class="fas fa-comments"></i> 10</span> </div> </div>
+                           </a>
+                       </article>
+                       
+                       <!-- Card Notícia 8 (NOVA) -->
+                       <article class="news-card" data-news-id="crunchyroll-updates" data-title="Crunchyroll Anuncia Novas Ferramentas Sociais e Expansão de Catálogo" data-image="images/noticia_crunchyroll.jpg" data-date="07 Jul 2024" data-comments="10" data-category="Streaming/Indústria" data-full-content="Em seu último comunicado, a Crunchyroll detalhou planos para introduzir novas funcionalidades sociais na plataforma, permitindo perfis customizáveis e listas de amigos. Além disso, a empresa anunciou a aquisição de licenças para diversos animes clássicos e filmes que serão adicionados ao catálogo nos próximos meses, reforçando sua posição como principal hub de streaming de anime no ocidente.">
+                           <a href="#" class="news-card__link btn--read-more" data-news-id="crunchyroll-updates">
+                               <div class="news-card__image-container"> <img src="images/logo.png" alt="Crunchyroll Updates" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                               <div class="news-card__content"> <span class="news-card__category">Streaming/Indústria</span> <h4 class="news-card__title">Crunchyroll Anuncia Novas Ferramentas Sociais e Catálogo</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 07 Jul 2024</span> <span><i class="fas fa-comments"></i> 10</span> </div> </div>
+                           </a>
+                       </article>
+                       
+                 </div>
+                 <div id="no-results-message" style="display: none;">Nenhuma notícia encontrada.</div>
+                 <!-- Paginação (Ajustada para Página 2) -->
+                 <nav class="pagination news-pagination mt-7">
+                     <a href="noticias.html" class="prev"><i class="fas fa-chevron-left"></i> Anterior</a> <!-- Link para página 1 -->
+                     <a href="noticias.html">1</a>
+                     <span class="current">2</span> <!-- Página 2 ativa -->
+                     <a href="noticias2.html">3</a>
+                     <span>...</span>
+                     <a href="noticias2.html">10</a>
+                     <a href="noticias2.html" class="next">Próxima <i class="fas fa-chevron-right"></i></a>
+                 </nav>
+            </section>
+
+            <!-- Seção de Vídeos (Mantida - ajuste os vídeos se quiser) -->
+            <section id="video-highlights" class="video-highlights-section animated-section fade-in">
+                 <h2 class="section-title-main"><i class="fas fa-video"></i> Vídeos em Destaque</h2>
+                 <div class="video-grid">
+                    <div class="video-card"> <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/If23gs3Y2z0/mqdefault.jpg" alt="Trailer Dragon Ball Daima" loading="lazy"/> <a href="https://www.youtube.com/watch?v=If23gs3Y2z0" target="_blank" class="play-button" aria-label="Assistir Trailer Dragon Ball Daima"> <i class="fas fa-play"></i> </a> </div> <h4 class="video-title">Trailer Oficial: Dragon Ball Daima</h4> <span class="video-source">YouTube / Toei Animation</span> </div>
+                    <div class="video-card"> <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/O4iDaQOj6M8/mqdefault.jpg" alt="Trailer Filme Blue Lock" loading="lazy"/> <a href="https://www.youtube.com/watch?v=O4iDaQOj6M8" target="_blank" class="play-button" aria-label="Assistir Trailer Filme Blue Lock"> <i class="fas fa-play"></i> </a> </div> <h4 class="video-title">Trailer: Blue Lock The Movie - Episode Nagi</h4> <span class="video-source">YouTube / Crunchyroll</span> </div>
+                     <div class="video-card"> <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/cp4Gs6ygW3Q/mqdefault.jpg" alt="Trailer Omniscient Reader Anime" loading="lazy"/> <a href="https://www.youtube.com/watch?v=cp4Gs6ygW3Q" target="_blank" class="play-button" aria-label="Assistir Trailer Omniscient Reader"> <i class="fas fa-play"></i> </a> </div> <h4 class="video-title">Teaser: Omniscient Reader's Viewpoint Anime</h4> <span class="video-source">YouTube / Oficial</span> </div>
+                 </div>
+            </section>
+
+           <!-- Seção Galeria (Apenas Imagens) -->
+<section id="animes" class="anime-list">
+    <h2 class="section-title-main"><i class="fas fa-images"></i> Galeria</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/logo.png" alt="Concept Art Arcane S2" loading="lazy" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="images/logo.png" alt="Visual Chave: Frieren Elfa Milenar" loading="lazy" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="images/logo.png" alt="Cena Icônica: Naruto vs Sasuke (Remake Concept)" loading="lazy" class="gallery-image">
+        </div>
+    </div>
+</section>
+
+
+             <!-- Seção Entrevistas (Mantida) -->
+             <section id="interviews" class="interviews-section animated-section fade-in">
+                  <h2 class="section-title-main"><i class="fas fa-microphone-alt"></i> Entrevistas e Especiais</h2>
+                  <div class="interview-list">
+                      <article class="interview-item"> <img src="images/interview_oda.jpg" alt="Eiichiro Oda" class="interview-image" loading="lazy"> <div class="interview-content"> <span class="interview-category">Entrevista / Criador</span> <h4 class="interview-title">Eiichiro Oda Fala Sobre o Futuro de One Piece Pós-Wano</h4> <p class="interview-excerpt">Em rara entrevista, o criador de One Piece discute os desafios de adaptar a saga final, o impacto do live-action e o que os fãs podem esperar...</p> <a href="#" class="btn btn--secondary btn--small">Ler Entrevista</a> </div> </article>
+                       <article class="interview-item"> <img src="images/interview_mappa.jpg" alt="MAPPA CEO" class="interview-image" loading="lazy"> <div class="interview-content"> <span class="interview-category">Especial / Estúdio</span> <h4 class="interview-title">Por Dentro da MAPPA: Os Desafios de Animar Jujutsu, Chainsaw e Mais</h4> <p class="interview-excerpt">Uma visão exclusiva dos bastidores do estúdio MAPPA, discutindo a pressão, as técnicas de animação e o futuro de seus projetos...</p> <a href="#" class="btn btn--secondary btn--small">Ver Especial</a> </div> </article>
+                  </div>
+             </section>
+
+             <!-- Seção Reviews (Mantida) -->
+              <section id="reviews" class="reviews-section animated-section fade-in">
+                   <h2 class="section-title-main"><i class="fas fa-pen-alt"></i> Análises e Reviews</h2>
+                   <div class="reviews-grid">
+                       <article class="review-card"> <span class="review-score good">8.5</span> <h4 class="review-title">Review: Frieren - Além da Jornada (Temporada 1)</h4> <p class="review-excerpt">Uma obra-prima melancólica sobre tempo, perda e conexão. Análise completa da primeira temporada.</p> <a href="#" class="review-author">Por Equipe DenyAnimeHub</a> </article>
+                       <article class="review-card"> <span class="review-score mixed">7.0</span> <h4 class="review-title">Review: Ishura - Batalha de Campeões Promete, Mas Tropeça?</h4> <p class="review-excerpt">Conceito interessante com muitos personagens, mas o ritmo e desenvolvimento dividem opiniões.</p> <a href="#" class="review-author">Por Ana Silva</a> </article>
+                        <article class="review-card"> <span class="review-score great">9.2</span> <h4 class="review-title">Review: Vinland Saga (Temporada 2) - A Redenção de Thorfinn</h4> <p class="review-excerpt">Uma mudança de tom magistral que eleva a série a novos patamares. Essencial.</p> <a href="#" class="review-author">Por Carlos Machado</a> </article>
+                   </div>
+              </section>
+
+               <!-- Seção Calendário (Mantida) -->
+                <section id="calendar" class="calendar-section animated-section fade-in">
+                      <h2 class="section-title-main"><i class="fas fa-calendar-alt"></i> Calendário Otaku</h2>
+                      <div class="calendar-grid">
+                          <div class="calendar-month"> <h4>Julho 2024</h4> <ul> <li><span class="cal-date">15</span> Tower of God S2 - Estreia</li> <li><span class="cal-date">20</span> Novo Cap. Mangá One Piece</li> <li><span class="cal-date">28</span> Evento Anime Expo Lite (Online)</li> </ul> </div>
+                           <div class="calendar-month"> <h4>Agosto 2024</h4> <ul> <li><span class="cal-date">05</span> Filme Haikyu!! - Cinemas BR</li> <li><span class="cal-date">18</span> Novo Cap. Mangá Boruto: TBV</li> </ul> </div>
+                            <div class="calendar-month"> <h4>Outubro 2024</h4> <ul> <li><span class="cal-date">??</span> Dandadan - Estreia</li> <li><span class="cal-date">??</span> Bleach TYBW Cour 3 - Estreia</li> <li><span class="cal-date">??</span> Dragon Ball Daima - Estreia</li></ul> </div>
+                      </div>
+                 </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <!-- Sidebar (Mantido) -->
+             <div class="sidebar-widget"> <h3><i class="fas fa-fire"></i> Top Notícias</h3> <ol class="ranking-list"> <li> <a href="#"> <img src="images/daima.jpg" alt="Dragon Ball Daima"> <div class="rank-info"> <span class="title">Trailer Final Dragon Ball Daima</span> <span class="details"> <span><i class="fas fa-eye"></i> 180k</span> </span> </div> </a> </li> <li> <a href="#"> <img src="images/bleach.jpg" alt="Genshin Bleach"> <div class="rank-info"> <span class="title">Genshin x Bleach Collab Choca Fãs</span> <span class="details"> <span><i class="fas fa-eye"></i> 165k</span> </span> </div> </a> </li> <li> <a href="#"> <img src="images/noticia_naruto.jpg" alt="Naruto Remake"> <div class="rank-info"> <span class="title">Naruto Remake Oficial 2026</span> <span class="details"> <span><i class="fas fa-eye"></i> 150k</span> </span> </div> </a> </li> <li> <a href="#"> <img src="images/oshinoko_s2.jpg" alt="Oshi no Ko S2"> <div class="rank-info"> <span class="title">Oshi no Ko S2: Drama Intenso</span> <span class="details"> <span><i class="fas fa-eye"></i> 112k</span> </span> </div> </a> </li> <li> <a href="#"> <img src="images/omniscient.jpg" alt="Omniscient Reader"> <div class="rank-info"> <span class="title">Omniscient Reader Anime Anunciado</span> <span class="details"> <span><i class="fas fa-eye"></i> 98k</span> </span> </div> </a> </li> </ol> </div>
+             <div class="sidebar-widget"> <h3><i class="fas fa-calendar-check"></i> Próximos Lançamentos</h3> <ul class="upcoming-list"> <li> <span class="upcoming-date">Ago 2024</span> <a href="#">Blue Lock Movie (Intl.)</a> </li><li> <span class="upcoming-date">Out 2024</span> <a href="#">Dragon Ball Daima</a> </li> <li> <span class="upcoming-date">Out 2024</span> <a href="#">Dandadan</a> </li> <li> <span class="upcoming-date">Nov 2024</span> <a href="#">Arcane S2</a> </li> <li> <span class="upcoming-date">Jan 2025</span> <a href="#">Sakamoto Days</a> </li> <li> <span class="upcoming-date">Jan 2025</span> <a href="#">Übel Blatt</a> </li> <li> <span class="upcoming-date">2025</span> <a href="#">Solo Leveling S2</a> </li> </ul> </div>
+             <div class="sidebar-widget"> <h3><i class="fas fa-poll"></i> Enquete Rápida</h3> <form class="poll-form simple-poll"> <p class="poll-question">Qual estreia de Outubro 2024 você mais espera?</p> <label><input type="radio" name="hype_poll_oct" value="daima"> Dragon Ball Daima</label> <label><input type="radio" name="hype_poll_oct" value="dandadan"> Dandadan</label> <label><input type="radio" name="hype_poll_oct" value="bleach"> Bleach TYBW Cour 3</label> <label><input type="radio" name="hype_poll_oct" value="outro"> Outro</label> <button type="submit" class="btn btn--secondary btn--small" disabled>Votar</button> <small>(Votação indisponível)</small> </form> </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+       <!-- Footer (Mantido) -->
+       <div class="container"> <div class="footer-grid"> <div class="footer-column footer-column--about"> <div class="footer-logo"> <a href="index.html"> <img src="images/icone.ico" alt="Logo DenyAnimeHub"> <span>DenyAnimeHub</span> </a> </div> <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p> <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p> </div> <div class="footer-column footer-column--links"> <h4 class="footer-title">Navegação</h4> <ul class="footer-link-list"> <li><a href="index.html">Início</a></li> <li><a href="#animes">Animes</a></li> <li><a href="#comments">Comunidade</a></li> <li><a href="login.html">Login / Registro</a></li> <li><a href="#">Política de Privacidade</a></li> <li><a href="#">Termos de Uso</a></li> </ul> </div> <div class="footer-column footer-column--contact"> <h4 class="footer-title">Contato</h4> <ul class="footer-contact-list"> <li> <i class="fas fa-map-marker-alt"></i> <span>Angola, Luanda, Talatona</span> </li> <li> <a href="mailto:denyneves14@gmail.com"> <i class="fas fa-envelope"></i> <span>denyneves14@gmail.com</span> </a> </li> <li> <a href="tel:+244935995336"> <i class="fas fa-phone"></i> <span>+244 935 995 336</span> </a> </li> <li> <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer"> <i class="fab fa-whatsapp"></i> <span>+244 935 995 336 (WhatsApp)</span> </a> </li> </ul> </div> <div class="footer-column footer-column--social"> <h4 class="footer-title">Siga-nos</h4> <ul class="footer-social-list"> <li> <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"> <i class="fab fa-facebook-f"></i> </a> </li> <li> <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> </li> <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li> <li><a href="https://www.youtube.com/@memeiroitachi1264" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li> </ul> </div> </div> <div class="footer-bottom"> <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p> </div> </div>
+    </footer>
+
+    <!-- Modal de Notícias (Estrutura Mantida) -->
+    <div id="news-modal" class="modal">
+        <div class="modal__content news-modal__content">
+           <button class="modal__close" id="news-modal-close-btn" aria-label="Fechar modal">×</button>
+           <div class="modal__header news-modal__header">
+                <div class="news-modal__meta">
+                    <span><i class="fas fa-calendar-alt"></i> <span id="news-modal-date">Data</span></span>
+                    <span><i class="fas fa-user"></i> Por <span id="news-modal-author">Autor</span></span>
+                    <span><i class="fas fa-tags"></i> <span id="news-modal-tags">Tags</span></span>
+                 </div>
+                <h2 id="news-modal-title">Título da Notícia</h2>
+           </div>
+           <div class="modal__body news-modal__body">
+               <img id="news-modal-image" src="" alt="Imagem da Notícia" class="news-modal__image" loading="lazy">
+               <div id="news-modal-full-content" class="news-modal__text-content">
+                   <!-- Conteúdo será injetado pelo JS -->
+               </div>
+               <div class="news-modal__related">
+                   <h4>Links Relacionados:</h4>
+                   <ul id="news-modal-related-links">
+                       <li><a href="#" target="_blank" rel="noopener noreferrer">Fonte Original (Exemplo)</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="modal__footer">
+               <button class="btn btn--secondary" id="news-modal-close-btn-footer">Fechar</button>
+           </div>
+        </div>
+    </div>
+
+    <!-- Link para o Script Unificado -->
+    <script src="script.js"></script>
+
+</body>
+</html>

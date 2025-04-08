@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página Atualizado -->
+    <title>Detalhes: Arcane (Temporada 2) - DenyAnimeHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Caminho CSS mantido -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Caminho do Ícone mantido -->
+    <link rel="icon" href="../images/icone.png" type="image/png">
+     
+</head>
+<body data-theme="light">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <!-- Link do Logo mantido -->
+                <a href="../index.html">
+                    <!-- Caminho da Imagem do Logo mantido -->
+                    <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                     <!-- Links de Navegação mantidos -->
+                     <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#animes">Animes</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li>
+                        <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon icon-moon"></i>
+                            <i class="fas fa-sun icon-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="anime-detail-section container">
+            <div class="anime-detail__grid">
+                <!-- Coluna Esquerda: Poster e Infos -->
+                <aside class="anime-detail__sidebar">
+                    <div class="anime-detail__poster">
+                        <!-- Caminho da Imagem do Poster Atualizado (pode precisar de uma imagem específica da S2) -->
+                        <img src="../images/arcane.jpg" alt="Poster Arcane (Temporada 2)"> <!-- Assume que existe arcane2.jpg -->
+                    </div>
+                    <div class="anime-detail__info-block">
+                        <h4 class="text-accent mb-2">Informações</h4>
+                        <!-- Informações Atualizadas -->
+                        <p><strong><i class="fas fa-star"></i> Classificação:</strong> N/A</p>
+                        <p><strong><i class="fas fa-calendar-alt"></i> Lançamento:</strong> Nov 2024</p>
+                        <p><strong><i class="fas fa-globe"></i> Idioma:</strong> Legendado / Dublado</p>
+                        <p><strong><i class="fas fa-film"></i> Estúdio:</strong> Fortiche Production / Riot Games</p>
+                        <p><strong><i class="fas fa-tags"></i> Gêneros:</strong> Ação, Drama, Sci-Fi, Fantasia, Aventura</p>
+                        <p><strong><i class="fas fa-tv"></i> Status:</strong> Próxima Temporada</p>
+                    </div>
+                     <!-- Link interno para seção de episódios mantido -->
+                     <a href="#episode-list-title" class="btn btn--primary" style="width: 100%; margin-top: var(--spacing-md);"><i class="fas fa-list-ol"></i> Ir para Episódios</a>
+                </aside>
+
+                <!-- Coluna Direita: Conteúdo Principal -->
+                <article class="anime-detail__content">
+                    <!-- Título Principal Atualizado -->
+                    <h1>Arcane (Temporada 2)</h1>
+                    <!-- Subtítulo Atualizado -->
+                    <div class="subtitle">Temporada 2</div>
+
+                    <h4 class="text-accent mb-1">Sinopse</h4>
+                    <!-- Sinopse Atualizada -->
+                    <p>Após o ataque devastador de Jinx ao conselho de Piltover, a frágil paz entre a cidade alta e a subferia de Zaun é estilhaçada. A segunda temporada mergulha nas consequências caóticas desse ato, com Vi e Caitlyn liderando a caçada por Jinx, que se afunda ainda mais na loucura e na anarquia.</p>
+                    <p>As tensões políticas e sociais explodem, forçando heróis e vilões a escolherem lados em um conflito que ameaça consumir ambas as cidades. Novas alianças serão formadas, segredos sombrios virão à tona e a luta pelo poder e pela sobrevivência atingirá níveis sem precedentes, enquanto o destino de Runeterra pode estar em jogo.</p>
+
+                    <h4 class="text-accent mt-3 mb-1">Trailer (Season 2 Teaser)</h4>
+
+                    <!-- Estrutura do Trailer Mantida, URL Atualizada -->
+                    <div class="anime-detail__trailer mb-3"
+                         style="display: flex; justify-content: center; align-items: center;">
+                        <!-- data-trailer atualizado -->
+                        <article class="anime-card" data-trailer="https://www.youtube.com/embed/Ft_QrPGXWqc"
+                            style="width: 100%; max-width: 900px; height: auto; border-radius: 10px;
+                                   overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                                   padding: 50px; background: #1a1a1a;">
+                            <!-- src e title do iframe atualizados -->
+                            <iframe style="width: 100%; height: 400px; border-radius: 10px;"
+                                    src="https://www.youtube.com/embed/Ft_QrPGXWqc"
+                                    title="Trailer Arcane Season 2"
+                                    frameborder="3" allowfullscreen>
+                            </iframe>
+                        </article>
+                    </div>
+
+                    <!-- Script Inline do Trailer Mantido (Funciona com o data-trailer atualizado) -->
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let animeCard = document.querySelector(".anime-detail__trailer .anime-card");
+                        if (animeCard) {
+                            let trailerUrl = animeCard.getAttribute("data-trailer");
+                            let iframe = animeCard.querySelector("iframe");
+                            if (trailerUrl && iframe) {
+                                iframe.src = trailerUrl;
+                            }
+                        } else {
+                            animeCard = document.querySelector(".anime-card");
+                             if (animeCard) {
+                                console.warn("Seletor de trailer '.anime-detail__trailer .anime-card' não encontrado, usando '.anime-card'. Pode não ser o trailer correto se houver outros cards.");
+                                let trailerUrl = animeCard.getAttribute("data-trailer");
+                                let iframe = animeCard.querySelector("iframe");
+                                if (trailerUrl && iframe) {
+                                    iframe.src = trailerUrl;
+                                }
+                             }
+                        }
+                    });
+                    </script>
+
+                     <h4 class="text-accent mt-3 mb-1" id="episode-list-title">Episódios</h4>
+                     <!-- Texto Atualizado para Temporada 2 -->
+                     <p class="text-secondary mb-2">A Segunda Temporada estreia em Novembro de 2024.</p>
+                     <!-- Lista de Episódios Mantida como Placeholder -->
+                     <ul class="episode-list">
+                        <li><a href="#"><span>Episódio 01 (Nov 2024)</span> <i class="fas fa-clock"></i></a></li>
+                        <li><a href="#"><span>Episódio 02 (Nov 2024)</span> <i class="fas fa-clock"></i></a></li>
+                        <li><a href="#"><span>Episódio 03 (Nov 2024)</span> <i class="fas fa-clock"></i></a></li>
+                        <li><a href="#"><span>(Aguardando Lançamento...)</span></a></li>
+                     </ul>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+   <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Coluna 1: Logo e Copyright -->
+            <div class="footer-column footer-column--about">
+                <div class="footer-logo">
+                    <a href="index.html">
+                         <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                         <span>DenyAnimeHub</span>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos (Opcional) -->
+            <div class="footer-column footer-column--links">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#animes">Animes</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="#comments">Comunidade</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="login.html">Login / Registro</a></li>
+                    <li><a href="#">Política de Privacidade</a></li> <!-- Exemplo -->
+                    <li><a href="#">Termos de Uso</a></li> <!-- Exemplo -->
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="footer-column footer-column--contact">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angola, Luanda, Talatona</span>
+                    </li>
+                    <li>
+                        <a href="mailto:denyneves14@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>denyneves14@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+244935995336">
+                            <i class="fas fa-phone"></i>
+                            <span>+244 935 995 336</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+244 935 995 336 (WhatsApp)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div class="footer-column footer-column--social">
+                <h4 class="footer-title">Siga-nos</h4>
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- Adicione mais redes se desejar -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li> -->
+                </ul>
+            </div>
+
+        </div> <!-- Fim .footer-grid -->
+
+         <!-- Linha Inferior Opcional -->
+         <div class="footer-bottom">
+             <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p>
+         </div>
+
+    </div> <!-- Fim .container -->
+</footer>
+
+    <!-- Caminho do Script Externo mantido -->
+    <script src="../script.js"></script>
+
+    <!-- Script Inline Mínimo Mantido -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle');
+            const bodyElement = document.body;
+
+            // --- Tema ---
+             const applyTheme = (theme) => {
+                if (bodyElement) {
+                    bodyElement.dataset.theme = theme;
+                    localStorage.setItem('theme', theme);
+                }
+            };
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            if (themeToggleButton && bodyElement) {
+                themeToggleButton.addEventListener('click', () => {
+                    const newTheme = bodyElement.dataset.theme === 'light' ? 'dark' : 'light';
+                    applyTheme(newTheme);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

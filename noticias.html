@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - DenyAnimeHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link para o CSS principal e refeito -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/1.ico" type="image/ico">
+</head>
+<body data-theme="dark" class="page-noticias"> <!-- Default to dark -->
+
+ <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <a href="index.html">
+                    <img src="images/1.ico" alt="Logo DenyAnimeHub">
+              <span>DenyAnimeHub</span> 
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="assistir.html">Assistir</a></li>
+                    <li><a href="noticias.html" class="active">Notícias</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li> <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema"> <i class="fas fa-moon icon-moon"></i> <i class="fas fa-sun icon-sun"></i> </button> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- News Hero Section -->
+    <section id="news-hero" class="news-hero-section animated-section fade-in">
+         <!-- Use background-image via CSS -->
+        <div class="news-hero-overlay"></div> <!-- Overlay para contraste -->
+        <div class="container news-hero-content">
+            <h1><i class="fas fa-satellite-dish"></i> Central de Notícias Otaku</h1>
+            <p>Sua fonte definitiva para as últimas novidades, anúncios explosivos e análises profundas do universo anime e mangá.</p>
+            <a href="#noticias-recentes" class="btn btn--primary btn--large">Ver Últimas Notícias <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Layout -->
+    <div class="main-layout container">
+        <!-- Main Content Area -->
+        <main class="main-content-area">
+
+            <!-- Notícia em Destaque -->
+            <section id="featured-news" class="featured-news-section animated-section fade-in-up">
+                 <h2 class="section-title-main"><i class="fas fa-star"></i> Em Destaque</h2>
+                 <article class="featured-news-card"
+                          data-news-id="naruto-remake"
+                          data-title="É Oficial! Remake Completo de Naruto Clássico Anunciado para 2026"
+                          data-image="images/noticia_naruto_remake.jpg"
+                          data-date="15 de Julho, 2024"
+                          data-author="Deny Neves"
+                          data-tags="Naruto, Remake, Anúncio, Studio Pierrot"
+                          data-full-content="<p>Após meses de especulação intensa alimentada por insiders e fãs esperançosos, a Shueisha e o Studio Pierrot finalmente confirmaram o que muitos desejavam: Naruto, a série clássica que definiu uma geração, receberá um remake completo.</p><p>Previsto para estrear em <strong>2026</strong>, o projeto promete reanimar toda a saga original com tecnologia de animação moderna, mantendo-se fiel ao mangá de Masashi Kishimoto e incluindo cenas de batalha estendidas e momentos inéditos de desenvolvimento de personagens. A notícia agitou a comunidade otaku globalmente, gerando debates sobre o elenco de voz e as expectativas para a nova adaptação.</p><h4>O que esperar?</h4><ul><li>Animação totalmente refeita com tecnologias atuais.</li><li>Possível reajuste de ritmo e inclusão de conteúdo do mangá não adaptado.</li><li>Exploração mais profunda de arcos específicos.</li></ul><p>Fique ligado no DenyAnimeHub para mais atualizações sobre este projeto monumental!</p>">
+                    <div class="featured-news__image">
+                        <img src="images/noticia_naruto_remake.jpg" alt="Remake de Naruto Clássico" loading="lazy" />
+                         <span class="featured-badge"><i class="fas fa-check-circle"></i> CONFIRMADO</span>
+                    </div>
+                    <div class="featured-news__content">
+                        <div class="featured-news__meta">
+                            <span><i class="fas fa-calendar-alt"></i> 15 Jul 2024</span>
+                            <span><i class="fas fa-user-edit"></i> Por Deny Neves</span>
+                            <span><i class="fas fa-tags"></i> Naruto, Remake</span>
+                        </div>
+                        <h3 class="featured-news__title">É Oficial! Remake Completo de Naruto Clássico Anunciado para 2026</h3>
+                        <p class="featured-news__excerpt">Após meses de especulação, a Shueisha e o Studio Pierrot confirmaram: Naruto ganhará um remake completo com animação moderna... Saiba todos os detalhes!</p>
+                        <button class="btn btn--secondary btn--read-more" data-news-id="naruto-remake"><i class="fas fa-book-open"></i> Leia a Matéria Completa</button>
+                    </div>
+                 </article>
+            </section>
+
+             <!-- Notícias Recentes Grid -->
+             <section id="noticias-recentes" class="animated-section fade-in-up">
+                <h2 class="section-title-main"><i class="far fa-newspaper"></i> Notícias Recentes</h2>
+                <div class="news-grid">
+                    <!-- Card Notícia 1 -->
+                    <article class="news-card"
+                             data-news-id="bleach-tybw-cour3"
+                             data-title="Bleach TYBW Cour 3 Ganha Data e Trailer Intenso Focado nos Sternritters"
+                             data-image="images/noticia_bleach_final.jpg"
+                             data-date="14 Jul 2024"
+                             data-comments="28"
+                             data-category="Anime"
+                             data-tags="Bleach, TYBW, Anime, Trailer"
+                             data-full-content="<p>A espera está quase no fim! O site oficial de <strong>Bleach: Thousand-Year Blood War</strong> revelou que o Cour 3, intitulado 'The Conflict', estreará em <strong>Outubro de 2024</strong>.</p><p>Junto com a data, um novo trailer eletrizante foi divulgado, mostrando trechos das batalhas cruciais entre os Shinigamis restantes e a elite Quincy Sternritter, incluindo confrontos muito aguardados como Urahara vs Askin Nakk Le Vaar e o retorno de personagens chave. A animação do Studio Pierrot continua impecável, prometendo um clímax de tirar o fôlego para este arco final.</p>">
+                        <a href="#" class="news-card__link btn--read-more" data-news-id="bleach-tybw-cour3">
+                            <div class="news-card__image-container"> <img src="images/noticia_bleach_final.jpg" alt="Bleach TYBW Parte Final" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                            <div class="news-card__content"> <span class="news-card__category">Anime</span> <h4 class="news-card__title">Bleach TYBW Cour 3 Ganha Data e Trailer Intenso</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 14 Jul 2024</span> <span><i class="fas fa-comments"></i> 28</span> </div> </div>
+                        </a>
+                    </article>
+                    <!-- Card Notícia 2 -->
+                     <article class="news-card"
+                              data-news-id="mashle-announcement"
+                              data-title="Mashle: Magic and Muscles Terá Anúncio Importante em Evento Futuro"
+                              data-image="images/noticia_mashle_2temp.webp"
+                              data-date="13 Jul 2024"
+                              data-comments="15"
+                              data-category="Mangá/Anime"
+                              data-tags="Mashle, Anime, Anúncio"
+                              data-full-content="<p>A conta oficial de <strong>Mashle: Magic and Muscles</strong> no X (antigo Twitter) provocou os fãs com a promessa de um 'anúncio super importante' durante um evento especial agendado para Agosto.</p><p>Especulações apontam fortemente para a confirmação da <strong>terceira temporada</strong> do anime, adaptação de um filme ou até mesmo um novo projeto relacionado à obra de Hajime Komoto. A segunda temporada, que adaptou o arco do Exame de Seleção do Visionário Divino, foi um sucesso, aumentando a expectativa pelo futuro da série que mistura magia e músculos.</p>">
+                        <a href="#" class="news-card__link btn--read-more" data-news-id="mashle-announcement">
+                            <div class="news-card__image-container"> <img src="images/noticia_mashle_2temp.webp" alt="Mashle Anúncio" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                            <div class="news-card__content"> <span class="news-card__category">Mangá/Anime</span> <h4 class="news-card__title">Mashle: Magic and Muscles Terá Anúncio Importante</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 13 Jul 2024</span> <span><i class="fas fa-comments"></i> 15</span> </div> </div>
+                        </a>
+                    </article>
+                    <!-- Card Notícia 3 -->
+                     <article class="news-card"
+                              data-news-id="opla-s2-casting"
+                              data-title="One Piece Live Action: Ator de Crocodile Escolhido? Rumores Apontam!"
+                              data-image="images/onepiece_liveaction_s2.jpg"
+                              data-date="12 Jul 2024"
+                              data-comments="35"
+                              data-category="Live Action"
+                              data-tags="One Piece, Live Action, Netflix, Elenco"
+                              data-full-content="<p>A produção da segunda temporada do live-action de <strong>One Piece</strong> pela Netflix segue a todo vapor, e novos rumores sobre o elenco surgem constantemente.</p><p>O mais recente, vindo de fontes não oficiais ligadas à produção, sugere que um ator de renome de Hollywood estaria em negociações finais para interpretar <strong>Sir Crocodile</strong>, um dos vilões mais icônicos do arco de Alabasta. Embora a Netflix não tenha confirmado, a possibilidade agitou os fãs nas redes sociais. A segunda temporada ainda não tem data de estreia.</p>">
+                         <a href="#" class="news-card__link btn--read-more" data-news-id="opla-s2-casting">
+                             <div class="news-card__image-container"> <img src="images/onepiece_liveaction_s2.jpg" alt="One Piece Live Action S2" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                             <div class="news-card__content"> <span class="news-card__category">Live Action</span> <h4 class="news-card__title">One Piece Live Action: Ator de Crocodile Escolhido? Rumores!</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 12 Jul 2024</span> <span><i class="fas fa-comments"></i> 35</span> </div> </div>
+                         </a>
+                     </article>
+                    <!-- Card Notícia 4 -->
+                      <article class="news-card"
+                               data-news-id="sakamoto-visual"
+                               data-title="Sakamoto Days Anime: Visual Chave e Teaser Trailer Revelados!"
+                               data-image="images/sakamoto_days.jpg"
+                               data-date="11 Jul 2024"
+                               data-comments="22"
+                               data-category="Anime"
+                               data-tags="Sakamoto Days, Anime, Trailer, Visual"
+                               data-full-content="<p>O primeiro visual chave e um teaser trailer da aguardada adaptação para anime de <strong>Sakamoto Days</strong> foram revelados! Produzido pela TMS Entertainment, o anime estreia em <strong>Janeiro de 2025</strong>.</p><p>O visual mostra Taro Sakamoto em sua forma 'aposentada', ao lado de Shin e Lu Xiaotang. O teaser, embora curto, captura perfeitamente o tom de ação e comédia do mangá, com cenas rápidas mostrando a incrível habilidade de Sakamoto mesmo fora de forma. A animação parece promissora, aumentando ainda mais o hype para a estreia.</p>">
+                          <a href="#" class="news-card__link btn--read-more" data-news-id="sakamoto-visual">
+                              <div class="news-card__image-container"> <img src="images/sakamoto_days.jpg" alt="Sakamoto Days Anime" loading="lazy" /> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                              <div class="news-card__content"> <span class="news-card__category">Anime</span> <h4 class="news-card__title">Sakamoto Days: Primeiras Impressões do Visual do Anime</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 11 Jul 2024</span> <span><i class="fas fa-comments"></i> 22</span> </div> </div>
+                          </a>
+                      </article>
+                     <!-- Card Notícia 5 -->
+                      <article class="news-card" data-news-id="frieren-s2" data-title="Frieren S2 Confirmada! O que esperar da continuação da jornada?" data-image="images/anime2024_frieren.jpg" data-date="10 Jul 2024" data-comments="41" data-category="Anime" data-tags="Frieren, Anime, Temporada 2" data-full-content="<p>Após o enorme sucesso da primeira temporada, a continuação de <strong>Frieren: Beyond Journey's End</strong> foi oficialmente confirmada! O anúncio veio acompanhado de um visual teaser emocionante.</p><p>A segunda temporada deve adaptar o aclamado arco do <strong>Exame de Mago de Primeira Classe</strong>, introduzindo novos personagens complexos, desafios mágicos e aprofundando a jornada de Frieren, Fern e Stark em busca de entender a humanidade e a passagem do tempo. Ainda sem data de estreia definida, mas a expectativa já está altíssima.</p>">
+                          <a href="#" class="news-card__link btn--read-more" data-news-id="frieren-s2">
+                              <div class="news-card__image-container"> <img src="images/anime2024_frieren.jpg" alt="Frieren S2" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                              <div class="news-card__content"> <span class="news-card__category">Anime</span> <h4 class="news-card__title">Frieren S2 Confirmada! O que esperar da continuação?</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 10 Jul 2024</span> <span><i class="fas fa-comments"></i> 41</span> </div> </div>
+                          </a>
+                      </article>
+                      <!-- Card Notícia 6 -->
+                       <article class="news-card" data-news-id="aot-final-ost" data-title="Attack on Titan: Trilha Sonora Completa do Final Épico é Lançada" data-image="images/ataque.jpg" data-date="09 Jul 2024" data-comments="18" data-category="Música/Anime" data-tags="Attack on Titan, OST, Música" data-full-content="<p>Para os fãs que ainda estão se recuperando do final épico de <strong>Attack on Titan</strong>, a trilha sonora completa dos episódios finais (The Final Chapters Special 1 & 2) foi lançada digitalmente em todas as principais plataformas.</p><p>Composições de Hiroyuki Sawano e Kohta Yamamoto capturam a intensidade, o desespero e a melancolia dos momentos derradeiros da saga de Eren Yeager. Uma coleção essencial para qualquer fã da série. Ouça agora e reviva as emoções!</p>">
+                           <a href="#" class="news-card__link btn--read-more" data-news-id="aot-final-ost">
+                               <div class="news-card__image-container"> <img src="images/ataque.jpg" alt="AoT OST" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                               <div class="news-card__content"> <span class="news-card__category">Música/Anime</span> <h4 class="news-card__title">Attack on Titan: Trilha Sonora Completa do Final Lançada</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 09 Jul 2024</span> <span><i class="fas fa-comments"></i> 18</span> </div> </div>
+                           </a>
+                       </article>
+                       <!-- Card Notícia 7 -->
+                       <article class="news-card" data-news-id="dandadan-hype" data-title="Dandadan: Por que este é o Anime Mais Aguardado de Outubro 2024?" data-image="images/anime2025_dandadan.jpg" data-date="08 Jul 2024" data-comments="55" data-category="Anime/Preview" data-tags="Dandadan, Anime, Preview, Hype" data-full-content="<p>Com estreia marcada para <strong>Outubro de 2024</strong>, <strong>Dandadan</strong>, adaptado pelo renomado estúdio Science SARU, está gerando um hype massivo e justificado.</p><p>A mistura única de ocultismo, ficção científica, comédia absurda e romance peculiar conquistou leitores do mangá. Exploramos os motivos por trás da expectativa, desde a direção de arte psicodélica até a química explosiva dos protagonistas Momo e Okarun. Prepare-se para uma das estreias mais insanas e visualmente criativas do ano!</p>">
+                            <a href="#" class="news-card__link btn--read-more" data-news-id="dandadan-hype">
+                                <div class="news-card__image-container"> <img src="images/anime2025_dandadan.jpg" alt="Dandadan Hype" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                                <div class="news-card__content"> <span class="news-card__category">Anime/Preview</span> <h4 class="news-card__title">Dandadan: Por que este é o Anime Mais Aguardado de 2024?</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 08 Jul 2024</span> <span><i class="fas fa-comments"></i> 55</span> </div> </div>
+                            </a>
+                       </article>
+                        <!-- Card Notícia 8 -->
+                       <article class="news-card" data-news-id="chainsaw-movie" data-title="Chainsaw Man - O Filme: Reze Arc Ganha Primeiro Teaser Impactante" data-image="images/chainsaw_reze.jpg" data-date="07 Jul 2024" data-comments="31" data-category="Anime/Filme" data-tags="Chainsaw Man, Filme, Anime, Trailer, MAPPA" data-full-content="<p>Fãs de <strong>Chainsaw Man</strong>, preparem-se! O aguardado filme que adapta o arco 'Reze' (Bomb Girl) recebeu seu primeiro teaser oficial divulgado pela MAPPA.</p><p>Embora curto, o vídeo mostra vislumbres de Denji e Reze em cenas explosivas e emocionantes, prometendo manter a alta qualidade de animação e a intensidade característica da série. O filme continuará a história diretamente após a primeira temporada. Data de estreia ainda não revelada, mas a produção parece estar avançando bem.</p>">
+                           <a href="#" class="news-card__link btn--read-more" data-news-id="chainsaw-movie">
+                               <div class="news-card__image-container"> <img src="images/chainsaw_reze.jpg" alt="Chainsaw Man Movie Teaser" loading="lazy"> <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+                               <div class="news-card__content"> <span class="news-card__category">Anime/Filme</span> <h4 class="news-card__title">Chainsaw Man - O Filme: Reze Arc Ganha Primeiro Teaser</h4> <div class="news-card__meta"> <span><i class="fas fa-calendar-alt"></i> 07 Jul 2024</span> <span><i class="fas fa-comments"></i> 31</span> </div> </div>
+                           </a>
+                       </article>
+                       <!-- Card Notícia 9 -->
+<article class="news-card" data-news-id="solo-leveling-anime" data-title="Solo Leveling - Temporada 2 Confirmada com Trailer Incrível" data-image="images/solo.jpg" data-date="07 Abr 2025" data-comments="54" data-category="Anime/Série" data-tags="Solo Leveling, Anime, Trailer, Segunda Temporada, A-1 Pictures" data-full-content="<p>Após o sucesso estrondoso da primeira temporada, a segunda temporada de <strong>Solo Leveling</strong> foi oficialmente confirmada! O estúdio A-1 Pictures liberou um trailer incrível, mostrando que as batalhas vão ficar ainda mais épicas.</p><p>O vídeo traz <strong>Sung Jin-Woo</strong> enfrentando novos inimigos, com animações ainda mais refinadas e trilha sonora intensa. A nova temporada promete adaptar os arcos mais aguardados pelos fãs, incluindo a ascensão de Jin-Woo como monarca. Estreia prevista para o segundo semestre de 2025.</p>">
+   <a href="#" class="news-card__link btn--read-more" data-news-id="solo-leveling-anime">
+       <div class="news-card__image-container">
+           <img src="images/solo.jpg" alt="Solo Leveling Temporada 2" loading="lazy">
+           <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div></div>
+       <div class="news-card__content"><span class="news-card__category">Anime/Série</span><h4 class="news-card__title">Solo Leveling - Temporada 2 Confirmada com Trailer Incrível</h4>
+           <div class="news-card__meta"><span><i class="fas fa-calendar-alt"></i> 07 Abr 2025</span><span><i class="fas fa-comments"></i> 54</span>
+           </div></div> </a>
+</article>
+<!-- Card Notícia 10 -->
+<article class="news-card" data-news-id="solo-leveling-arise" data-title="Solo Leveling: ARISE Já Está Disponível Globalmente" data-image="images/solo_leveling_arise.jpg" data-date="05 Abr 2025" data-comments="87" data-category="Game/Mobile" data-tags="Solo Leveling, Game, Mobile, RPG, ARISE" data-full-content="<p>Boas notícias para os fãs de <strong>Solo Leveling</strong>! O aguardado RPG mobile <strong>Solo Leveling: ARISE</strong> foi lançado oficialmente em diversos países, incluindo Brasil e Portugal.</p><p>Com gráficos de tirar o fôlego e jogabilidade dinâmica baseada nas habilidades de <strong>Sung Jin-Woo</strong>, o jogo permite que os jogadores revivam os momentos mais épicos do webtoon e anime. Além disso, há missões exclusivas, modo PvP e sistema de evolução de caçadores. Baixe agora e comece a sua jornada como o monarca das sombras!</p>">
+    <a href="#" class="news-card__link btn--read-more" data-news-id="solo-leveling-arise">
+        <div class="news-card__image-container">
+            <img src="images/solo_leveling_arise.jpg" alt="Solo Leveling ARISE Game" loading="lazy">
+            <div class="news-card__overlay"><span class="news-card__readmore"><i class="fas fa-plus"></i></span></div> </div>
+        <div class="news-card__content"> <span class="news-card__category">Game/Mobile</span><h4 class="news-card__title">Solo Leveling: ARISE Já Está Disponível Globalmente</h4>
+            <div class="news-card__meta"><span><i class="fas fa-calendar-alt"></i> 05 Abr 2025</span><span><i class="fas fa-comments"></i> 87</span> </div></div> </a>
+</article>
+               </div>
+                 <div id="no-results-message" style="display: none;">Nenhuma notícia encontrada.</div>
+                 <!-- Paginação (Opcional) -->
+                 <nav class="pagination news-pagination mt-7">
+                     <span class="current">1</span>
+                     <a href="noticias2.html">2</a>
+                     <a href="noticias3.html">3</a>
+                     <span>...</span>
+                     <a href="noticias10.html">10</a>
+                     <a href="noticias2.html" class="next">Próxima <i class="fas fa-chevron-right"></i></a>
+                 </nav>
+            </section>
+
+            <!-- Seção de Vídeos em Destaque -->
+            <section id="video-highlights" class="video-highlights-section animated-section fade-in-up">
+                 <h2 class="section-title-main"><i class="fas fa-video"></i> Vídeos em Destaque</h2>
+                 <div class="video-grid">
+                    <!-- Vídeo 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/hYzNkVCIUfk/mqdefault.jpg" alt="Thumbnail Trailer Solo Leveling S2" loading="lazy"/> <a href="https://www.youtube.com/watch?v=hYzNkVCIUfk" target="_blank" class="play-button" aria-label="Assistir Trailer Solo Leveling S2"> <i class="fas fa-play"></i> </a> </div>
+                        <h4 class="video-title">Trailer Oficial: Solo Leveling Season 2</h4> <span class="video-source">YouTube / Aniplex</span>
+                    </div>
+                    <!-- Vídeo 2 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/UN6RvPZ04f4/mqdefault.jpg" alt="Thumbnail Trailer Haikyu!! Movie" loading="lazy"/> <a href="https://www.youtube.com/watch?v=ABMPQhA0O9Q" target="_blank" class="play-button" aria-label="Assistir Trailer Haikyu!! Movie"> <i class="fas fa-play"></i> </a> </div>
+                        <h4 class="video-title">Trailer Épico: Haikyu!! The Dumpster Battle</h4> <span class="video-source">YouTube / Toho Animation</span>
+                    </div>
+                     <!-- Vídeo 3 -->
+                     <div class="video-card">
+                         <div class="video-thumbnail"> <img src="https://img.youtube.com/vi/oHLgsVxEueQ/mqdefault.jpg" alt="Thumbnail Trailer Sentai Daishikkaku" loading="lazy"/> <a href="https://www.youtube.com/watch?v=oHLgsVxEueQ" target="_blank" class="play-button" aria-label="Assistir Trailer Sentai Daishikkaku"> <i class="fas fa-play"></i> </a> </div>
+                         <h4 class="video-title">Trailer: Sentai Daishikkaku (Ranger Reject)</h4> <span class="video-source">YouTube / Shochiku</span>
+                    </div>
+                 </div>
+            </section>
+
+             <!-- Seção Galeria de Imagens -->
+             <section id="gallery" class="gallery-section animated-section fade-in-up">
+                <h2 class="section-title-main"><i class="fas fa-images"></i> Galeria Visual</h2>
+                <div class="gallery-grid">
+                    <!-- Item 1 -->
+                    <a href="images/gallery_1.jpg" class="gallery-item" data-title="Concept Art Arcane S2 - Zaun Detalhada">
+                        <img src="images/gallery_1.jpg" alt="Concept Art Arcane S2" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                     <!-- Item 2 -->
+                     <a href="images/gallery_2.jpg" class="gallery-item" data-title="Visual Chave: Frieren e o Grupo no Exame">
+                        <img src="images/gallery_2.jpg" alt="Visual Chave Frieren S2" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                     <!-- Item 3 -->
+                     <a href="images/gallery_3.jpg" class="gallery-item" data-title="Cena Icônica: Naruto vs Sasuke (Remake Concept)">
+                         <img src="images/gallery_3.jpg" alt="Naruto Remake Concept" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                     <!-- Item 4 -->
+                    <a href="images/gallery_4.jpg" class="gallery-item" data-title="Personagem: Denji e Pochita (Chainsaw Man)">
+                        <img src="images/gallery_4.jpg" alt="Denji e Pochita" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                    <!-- Item 5 -->
+                    <a href="images/gallery_5.jpg" class="gallery-item" data-title="Cenário: O Abismo (Made in Abyss)">
+                         <img src="images/gallery_5.jpg" alt="Made in Abyss Cenário" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                     <!-- Item 6 -->
+                     <a href="images/gallery_6.jpg" class="gallery-item" data-title="Luta: Gojo Satoru (Jujutsu Kaisen)">
+                        <img src="images/gallery_6.jpg" alt="Gojo Satoru Luta" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                    <!-- Item 7 -->
+                     <a href="images/gallery_7.jpg" class="gallery-item" data-title="Luta: Belmot Vs Vampira (Castlevania)">
+                        <img src="images/gallery_7.jpg" alt="Belmot Vs Vampira" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                    <!-- Item 8 -->
+                     <a href="images/gallery_8.jpg" class="gallery-item" data-title="Luta: Final Sung Vs Beru (Solo Leveling)">
+                        <img src="images/gallery_8.jpg" alt="Beru Vs Sung" loading="lazy">
+                        <div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div>
+                    </a>
+                </div>
+             </section>
+
+             <!-- Seção Entrevistas -->
+             <section id="interviews" class="interviews-section animated-section fade-in-up">
+                 <h2 class="section-title-main"><i class="fas fa-microphone-alt"></i> Entrevistas e Especiais</h2>
+                 <div class="interview-list">
+                     <article class="interview-item">
+                         <img src="images/interview_oda.jpg" alt="Eiichiro Oda" class="interview-image" loading="lazy">
+                         <div class="interview-content">
+                             <span class="interview-category">Entrevista / Criador</span>
+                             <h4 class="interview-title">Eiichiro Oda Fala Sobre o Futuro de One Piece Pós-Wano</h4>
+                             <p class="interview-excerpt">Em rara entrevista, o criador de One Piece discute os desafios de adaptar a saga final, o impacto do live-action e o que os fãs podem esperar nos próximos anos...</p>
+                             <a href="#link-entrevista-oda" class="btn btn--secondary btn--small">Ler Entrevista</a>
+                         </div>
+                     </article>
+                      <article class="interview-item">
+                          <img src="images/interview_mappa.jpg" alt="MAPPA CEO" class="interview-image" loading="lazy">
+                          <div class="interview-content">
+                              <span class="interview-category">Especial / Estúdio</span>
+                              <h4 class="interview-title">Por Dentro da MAPPA: Os Desafios de Animar Jujutsu, Chainsaw e Mais</h4>
+                              <p class="interview-excerpt">Uma visão exclusiva dos bastidores do estúdio MAPPA, discutindo a pressão, as técnicas de animação e o futuro de seus projetos mais populares...</p>
+                              <a href="#link-especial-mappa" class="btn btn--secondary btn--small">Ver Especial</a>
+                          </div>
+                      </article>
+                     <!-- Adicione mais entrevistas -->
+                 </div>
+             </section>
+
+             <!-- Seção Reviews -->
+              <section id="reviews" class="reviews-section animated-section fade-in-up">
+                  <h2 class="section-title-main"><i class="fas fa-pen-alt"></i> Análises e Reviews</h2>
+                  <div class="reviews-grid">
+                      <article class="review-card">
+                          <span class="review-score great">9.1</span>
+                          <h4 class="review-title">Review: Frieren - Além da Jornada (Temporada 1)</h4>
+                           <p class="review-excerpt">Uma obra-prima melancólica sobre tempo, perda e conexão. Análise completa da primeira temporada que conquistou o mundo.</p>
+                           <a href="#link-review-frieren" class="review-author">Por Equipe DenyAnimeHub</a>
+                      </article>
+                      <article class="review-card">
+                           <span class="review-score good">8.7</span>
+                           <h4 class="review-title">Review: Kaiju No. 8 - Ação Monstruosa com Coração</h4>
+                            <p class="review-excerpt">Adaptação fiel e emocionante do mangá, com animação de ponta e personagens carismáticos. Essencial para fãs de ação.</p>
+                            <a href="#link-review-kaiju" class="review-author">Por Carlos Machado</a>
+                       </article>
+                       <article class="review-card">
+                            <span class="review-score mixed">7.5</span>
+                            <h4 class="review-title">Review: Solo Leveling T1 - Hype Justificado?</h4>
+                             <p class="review-excerpt">Visualmente incrível, mas ritmo apressado pode dividir opiniões. Cumpre o hype, mas deixa espaço para melhorar na T2.</p>
+                             <a href="#link-review-solo" class="review-author">Por Ana Silva</a>
+                        </article>
+                      <!-- Adicione mais reviews -->
+                  </div>
+              </section>
+
+               <!-- Seção Calendário -->
+                <section id="calendar" class="calendar-section animated-section fade-in-up">
+                     <h2 class="section-title-main"><i class="fas fa-calendar-alt"></i> Calendário Otaku</h2>
+                     <div class="calendar-grid">
+                         <div class="calendar-month">
+                             <h4>Julho 2024</h4>
+                             <ul>
+                                 <li><span class="cal-date">15</span> Tower of God S2 - Estreia</li>
+                                 <li><span class="cal-date">20</span> Novo Cap. Mangá One Piece</li>
+                                 <li><span class="cal-date">28</span> Evento Anime Expo Lite (Online)</li>
+                             </ul>
+                         </div>
+                          <div class="calendar-month">
+                              <h4>Agosto 2024</h4>
+                              <ul>
+                                  <li><span class="cal-date">05</span> Filme Haikyu!! - Cinemas BR</li>
+                                  <li><span class="cal-date">18</span> Novo Cap. Mangá Boruto: TBV</li>
+                                  <li><span class="cal-date">??</span> Anúncio Importante Mashle</li>
+                              </ul>
+                          </div>
+                           <div class="calendar-month">
+                               <h4>Outubro 2024</h4>
+                               <ul>
+                                   <li><span class="cal-date">??</span> Dandadan - Estreia</li>
+                                   <li><span class="cal-date">??</span> Bleach TYBW Cour 3 - Estreia</li>
+                                   <li><span class="cal-date">??</span> Blue Lock T2 - Estreia</li>
+                               </ul>
+                           </div>
+                           <!-- Adicione mais meses -->
+                     </div>
+                </section>
+
+        </main> <!-- Fim .main-content-area -->
+
+        <!-- Sidebar -->
+        <aside class="sidebar animated-section fade-in-up">
+             <!-- Top Notícias Widget -->
+             <div class="sidebar-widget">
+                 <h3><i class="fas fa-fire"></i> Notícias Quentes</h3>
+                 <ol class="ranking-list">
+                    <li>
+                        <a href="#" class="btn--read-more" data-news-id="naruto-remake"> <!-- Link para abrir modal -->
+                            <img src="images/noticia_naruto_remake.jpg" alt="Naruto Remake">
+                            <div class="rank-info"> <span class="title">Naruto Clássico Ganha Remake!</span> <span class="details"> <span><i class="fas fa-calendar-alt"></i> 15 Jul</span> <span><i class="fas fa-eye"></i> 250k</span> </span> </div>
+                        </a>
+                    </li>
+                    <li>
+                         <a href="#" class="btn--read-more" data-news-id="bleach-tybw-cour3">
+                             <img src="images/noticia_bleach_final.jpg" alt="Bleach Cour 3">
+                            <div class="rank-info"> <span class="title">Bleach TYBW Cour 3: Data e Trailer</span> <span class="details"> <span><i class="fas fa-calendar-alt"></i> 14 Jul</span> <span><i class="fas fa-eye"></i> 180k</span> </span> </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn--read-more" data-news-id="dandadan-hype">
+                            <img src="images/anime2025_dandadan.jpg" alt="Dandadan">
+                            <div class="rank-info"> <span class="title">Dandadan: O Hype de Outubro</span> <span class="details"> <span><i class="fas fa-calendar-alt"></i> 08 Jul</span> <span><i class="fas fa-eye"></i> 155k</span> </span> </div>
+                        </a>
+                    </li>
+                    <li>
+                         <a href="#" class="btn--read-more" data-news-id="sakamoto-visual">
+                            <img src="images/sakamoto_days.jpg" alt="Sakamoto Days Anime">
+                            <div class="rank-info"> <span class="title">Sakamoto Days Anime: Visual!</span> <span class="details"> <span><i class="fas fa-calendar-alt"></i> 11 Jul</span> <span><i class="fas fa-eye"></i> 140k</span> </span> </div>
+                         </a>
+                    </li>
+                     <li>
+                        <a href="#" class="btn--read-more" data-news-id="chainsaw-movie">
+                            <img src="images/chainsaw_reze.jpg" alt="Chainsaw Man Filme">
+                            <div class="rank-info"> <span class="title">Chainsaw Man Filme: Teaser</span> <span class="details"> <span><i class="fas fa-calendar-alt"></i> 07 Jul</span> <span><i class="fas fa-eye"></i> 130k</span> </span> </div>
+                        </a>
+                    </li>
+                 </ol>
+             </div>
+
+              <!-- Próximos Lançamentos Widget -->
+             <div class="sidebar-widget">
+                 <h3><i class="fas fa-calendar-check"></i> Próximos Lançamentos</h3>
+                 <ul class="upcoming-list">
+                     <li> <span class="upcoming-date">Jul 2024</span> <a href="#link-tower-of-god">Tower of God S2</a> </li>
+                     <li> <span class="upcoming-date">Out 2024</span> <a href="#link-dandadan">Dandadan</a> </li>
+                     <li> <span class="upcoming-date">Out 2024</span> <a href="#link-bleach-c3">Bleach TYBW Cour 3</a> </li>
+                     <li> <span class="upcoming-date">Nov 2024</span> <a href="#link-arcane-s2">Arcane S2</a> </li>
+                     <li> <span class="upcoming-date">Jan 2025</span> <a href="#link-sakamoto">Sakamoto Days</a> </li>
+                     <li> <span class="upcoming-date">Jan 2025</span> <a href="#link-ubel-blatt">Übel Blatt</a> </li>
+                     <li> <span class="upcoming-date">2025</span> <a href="#link-solo-s2">Solo Leveling S2</a> </li>
+                     <li> <span class="upcoming-date">2025</span> <a href="#link-opm-s3">One Punch Man S3</a> </li>
+                 </ul>
+             </div>
+
+              <!-- Enquete Widget -->
+             <div class="sidebar-widget">
+                 <h3><i class="fas fa-poll-h"></i> Enquete Rápida</h3>
+                 <form class="poll-form simple-poll">
+                     <p class="poll-question">Qual anúncio recente te deixou mais hypado?</p>
+                     <label><input type="radio" name="hype_poll" value="naruto"> Naruto Remake</label>
+                     <label><input type="radio" name="hype_poll" value="bleach"> Bleach Cour 3</label>
+                     <label><input type="radio" name="hype_poll" value="sakamoto"> Sakamoto Days Anime</label>
+                     <label><input type="radio" name="hype_poll" value="frieren"> Frieren S2</label>
+                     <label><input type="radio" name="hype_poll" value="outro"> Outro</label>
+                     <button type="submit" class="btn btn--primary btn--small">Votar</button>
+                     <!-- <small>(Resultados após votar)</small> -->
+                 </form>
+             </div>
+
+        </aside> <!-- Fim .sidebar -->
+    </div> <!-- Fim .main-layout -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+       <div class="container">
+            <div class="footer-grid">
+                <!-- Colunas do Footer (manter estrutura) -->
+                 <div class="footer-column footer-column--about">
+                    <div class="footer-logo"> <a href="index.html"> <img src="images/icone.png" alt="Logo DenyAnimeHub"> <span>DenyAnimeHub</span> </a> </div>
+                    <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                    <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+                </div>
+                <div class="footer-column footer-column--links">
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="assistir.html">Assistir</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="login.html">Login / Registro</a></li>
+                        <li><a href="https://discord.gg/WQbFau2crf" target="_blank">Comunidade Discord</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-column--contact">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-contact-list">
+                        <li> <i class="fas fa-map-marker-alt"></i> <span>Angola, Luanda, Talatona</span> </li>
+                        <li> <a href="mailto:denyneves14@gmail.com"> <i class="fas fa-envelope"></i> <span>denyneves14@gmail.com</span> </a> </li>
+                        <li> <a href="tel:+244935995336"> <i class="fas fa-phone"></i> <span>+244 935 995 336</span> </a> </li>
+                        <li> <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer"> <i class="fab fa-whatsapp"></i> <span>WhatsApp</span> </a> </li>
+                    </ul>
+                </div>
+                 <div class="footer-column footer-column--social">
+                    <h4 class="footer-title">Siga-nos</h4>
+                    <ul class="footer-social-list">
+                        <li> <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"> <i class="fab fa-facebook-f"></i> </a> </li>
+                        <li> <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> </li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/@memeiroitachi1264" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://discord.gg/WQbFau2crf" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Notícias -->
+    <div id="news-modal" class="modal">
+        <div class="modal__content news-modal__content">
+           <button class="modal__close" id="news-modal-close-btn" aria-label="Fechar modal">×</button>
+           <div class="modal__header news-modal__header">
+                <h2 id="news-modal-title">Título da Notícia</h2>
+                <div class="news-modal__meta">
+                    <span><i class="fas fa-calendar-alt"></i> <span id="news-modal-date">Data</span></span>
+                    <span><i class="fas fa-user-edit"></i> Por <span id="news-modal-author">Autor</span></span>
+                    <span><i class="fas fa-tags"></i> <span id="news-modal-tags">Tags</span></span>
+                 </div>
+           </div>
+           <div class="modal__body news-modal__body">
+               <img id="news-modal-image" src="" alt="Imagem da Notícia" class="news-modal__image" loading="lazy">
+               <div id="news-modal-full-content" class="news-modal__text-content">
+                   <!-- Conteúdo será inserido aqui via JS -->
+                   <p>Carregando conteúdo...</p>
+               </div>
+               <!-- Opcional: Links relacionados ou fonte original -->
+               <div class="news-modal__related">
+                   <h4>Links Relacionados:</h4>
+                   <ul id="news-modal-related-links">
+                       <!-- Links adicionados via JS se necessário -->
+                       <li><a href="#" target="_blank" rel="noopener noreferrer">Fonte Original (Exemplo)</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="modal__footer">
+               <button class="btn btn--secondary" id="news-modal-close-btn-footer">Fechar</button>
+           </div>
+        </div>
+    </div>
+
+    <!-- Lightbox para Galeria -->
+    <!-- (Será criado dinamicamente pelo JS se não existir, ou pode adicionar a estrutura básica aqui) -->
+    <!--
+    <div id="gallery-lightbox" style="display: none;">
+        <img>
+        <div></div>
+    </div>
+    -->
+
+    <!-- Link para o Script principal -->
+    <script src="script.js"></script>
+
+</body>
+</html>

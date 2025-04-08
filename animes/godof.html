@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da Página Atualizado -->
+    <title>Detalhes: God of High School - DenyAnimeHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Caminho CSS mantido -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Caminho do Ícone mantido -->
+    <link rel="icon" href="../images/icone.png" type="image/png">
+</head>
+<body data-theme="light">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <!-- Link do Logo mantido -->
+                <a href="../index.html">
+                    <!-- Caminho da Imagem do Logo mantido -->
+                    <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                </a>
+            </div>
+            <nav class="site-header__nav">
+                <ul>
+                     <!-- Links de Navegação mantidos -->
+                     <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html#animes">Animes</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                    <li>
+                        <button class="theme-switch" id="theme-toggle" aria-label="Alternar tema">
+                            <i class="fas fa-moon icon-moon"></i>
+                            <i class="fas fa-sun icon-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="anime-detail-section container">
+            <div class="anime-detail__grid">
+                <!-- Coluna Esquerda: Poster e Infos -->
+                <aside class="anime-detail__sidebar">
+                    <div class="anime-detail__poster">
+                        <!-- Caminho da Imagem do Poster Atualizado -->
+                        <img src="../images/anime2024_godofhighschool.jpg" alt="Poster God of High School">
+                    </div>
+                    <div class="anime-detail__info-block">
+                        <h4 class="text-accent mb-2">Informações</h4>
+                        <!-- Informações Atualizadas -->
+                        <p><strong><i class="fas fa-star"></i> Classificação:</strong> 7.1 (Aprox.)</p>
+                        <p><strong><i class="fas fa-calendar-alt"></i> Lançamento:</strong> 2020</p>
+                        <p><strong><i class="fas fa-globe"></i> Idioma:</strong> Legendado / Dublado</p>
+                        <p><strong><i class="fas fa-film"></i> Estúdio:</strong> MAPPA</p>
+                        <p><strong><i class="fas fa-tags"></i> Gêneros:</strong> Ação, Artes Marciais, Sci-Fi, Sobrenatural, Comédia</p>
+                        <p><strong><i class="fas fa-tv"></i> Status:</strong> Temporada 1 Completa (13 Eps)</p>
+                    </div>
+                     <!-- Link interno para seção de episódios mantido -->
+                     <a href="#episode-list-title" class="btn btn--primary" style="width: 100%; margin-top: var(--spacing-md);"><i class="fas fa-list-ol"></i> Ir para Episódios</a>
+                </aside>
+
+                <!-- Coluna Direita: Conteúdo Principal -->
+                <article class="anime-detail__content">
+                    <!-- Título Principal Atualizado -->
+                    <h1>God of High School</h1>
+                    <!-- Subtítulo Atualizado -->
+                    <div class="subtitle">ゴッド・オブ・ハイスクール</div>
+
+                    <h4 class="text-accent mb-1">Sinopse</h4>
+                    <!-- Sinopse Atualizada -->
+                    <p>Tudo começou como um torneio de luta para encontrar o melhor lutador entre todos os estudantes do ensino médio na Coreia. Jin Mori, um especialista em Taekwondo, logo descobre que há algo muito maior por baixo do torneio.</p>
+                    <p>Ele e seus amigos, Han Daewi (especialista em Karatê) e Yoo Mira (mestra espadachim), unem forças para competir no "God of High School", um torneio que reúne participantes de todo o mundo. O prêmio? Qualquer desejo do vencedor será realizado pela misteriosa organização anfitriã. Mas o que eles não sabem é que forças sobrenaturais e divinas estão em jogo, e o torneio é apenas o começo de uma batalha épica por poder e sobrevivência.</p>
+
+                    <h4 class="text-accent mt-3 mb-1">Trailer Oficial</h4>
+
+                    <!-- Estrutura do Trailer Mantida, URL Atualizada -->
+                    <div class="anime-detail__trailer mb-3"
+                         style="display: flex; justify-content: center; align-items: center;">
+                        <!-- data-trailer atualizado -->
+                        <article class="anime-card" data-trailer="https://www.youtube.com/embed/oqjwUfprNAk"
+                            style="width: 100%; max-width: 900px; height: auto; border-radius: 10px;
+                                   overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                                   padding: 50px; background: #1a1a1a;">
+                            <!-- src e title do iframe atualizados -->
+                            <iframe style="width: 100%; height: 400px; border-radius: 10px;"
+                                    src="https://www.youtube.com/embed/oqjwUfprNAk"
+                                    title="The God of High School | OFFICIAL TRAILER"
+                                    frameborder="3" allowfullscreen>
+                            </iframe>
+                        </article>
+                    </div>
+
+                    <!-- Script Inline do Trailer Mantido (Funciona com o data-trailer atualizado) -->
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let animeCard = document.querySelector(".anime-detail__trailer .anime-card");
+                        if (animeCard) {
+                            let trailerUrl = animeCard.getAttribute("data-trailer");
+                            let iframe = animeCard.querySelector("iframe");
+                            if (trailerUrl && iframe) {
+                                iframe.src = trailerUrl;
+                            }
+                        } else {
+                            animeCard = document.querySelector(".anime-card");
+                             if (animeCard) {
+                                console.warn("Seletor de trailer '.anime-detail__trailer .anime-card' não encontrado, usando '.anime-card'. Pode não ser o trailer correto se houver outros cards.");
+                                let trailerUrl = animeCard.getAttribute("data-trailer");
+                                let iframe = animeCard.querySelector("iframe");
+                                if (trailerUrl && iframe) {
+                                    iframe.src = trailerUrl;
+                                }
+                             }
+                        }
+                    });
+                    </script>
+
+                     <h4 class="text-accent mt-3 mb-1" id="episode-list-title">Episódios (Temporada 1)</h4>
+                     <!-- Texto Atualizado -->
+                     <p class="text-secondary mb-2">A primeira temporada está completa com 13 episódios.</p>
+                     <!-- Lista de Episódios Atualizada para S1 -->
+                     <ul class="episode-list">
+                        <li><a href="#"><span>Episódio 01 - set up/stand up</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 02 - renewal/soul</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 03 - wisdom/kingdom</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 04 - marriage/bonds</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 05 - ronde/hound</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 06 - fear/SIX</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 07 - anima/force</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 08 - close/friend</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 09 - curse/cornered</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 10 - oath/meaning</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 11 - lay/key</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 12 - FOX/GOD</span> <i class="fas fa-play-circle"></i></a></li>
+                        <li><a href="#"><span>Episódio 13 - GOD/GOD</span> <i class="fas fa-play-circle"></i></a></li>
+                     </ul>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+   <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Coluna 1: Logo e Copyright -->
+            <div class="footer-column footer-column--about">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="../images/icone.ico" alt="Logo DenyAnimeHub">
+                         <span>DenyAnimeHub</span>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2025 DenyAnimeHub.<br> Todos os direitos reservados.</p>
+                <p class="footer-tagline">Feito com <i class="fas fa-heart text-accent"></i> por Fãs para Fãs.</p>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos (Opcional) -->
+            <div class="footer-column footer-column--links">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#animes">Animes</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="#comments">Comunidade</a></li> <!-- Ajuste o link se necessário -->
+                    <li><a href="login.html">Login / Registro</a></li>
+                    <li><a href="#">Política de Privacidade</a></li> <!-- Exemplo -->
+                    <li><a href="#">Termos de Uso</a></li> <!-- Exemplo -->
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="footer-column footer-column--contact">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Angola, Luanda, Talatona</span>
+                    </li>
+                    <li>
+                        <a href="mailto:denyneves14@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>denyneves14@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+244935995336">
+                            <i class="fas fa-phone"></i>
+                            <span>+244 935 995 336</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/244935995336" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+244 935 995 336 (WhatsApp)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Redes Sociais -->
+            <div class="footer-column footer-column--social">
+                <h4 class="footer-title">Siga-nos</h4>
+                <ul class="footer-social-list">
+                    <li>
+                        <a href="https://web.facebook.com/denyneves.francisco/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/denyneves14/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- Adicione mais redes se desejar -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+                    <!-- <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li> -->
+                </ul>
+            </div>
+
+        </div> <!-- Fim .footer-grid -->
+
+         <!-- Linha Inferior Opcional -->
+         <div class="footer-bottom">
+             <p>DenyAnimeHub não hospeda nenhum vídeo em seus servidores. Todo o conteúdo é fornecido por terceiros não afiliados.</p>
+         </div>
+
+    </div> <!-- Fim .container -->
+</footer>
+
+    <!-- Caminho do Script Externo mantido -->
+    <script src="../script.js"></script>
+
+    <!-- Script Inline Mínimo Mantido -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle');
+            const bodyElement = document.body;
+
+            // --- Tema ---
+             const applyTheme = (theme) => {
+                if (bodyElement) {
+                    bodyElement.dataset.theme = theme;
+                    localStorage.setItem('theme', theme);
+                }
+            };
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            if (themeToggleButton && bodyElement) {
+                themeToggleButton.addEventListener('click', () => {
+                    const newTheme = bodyElement.dataset.theme === 'light' ? 'dark' : 'light';
+                    applyTheme(newTheme);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
